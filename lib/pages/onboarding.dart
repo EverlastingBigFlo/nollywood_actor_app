@@ -125,7 +125,7 @@ class _OnboardingState extends State<Onboarding> {
     'lib/assets/Ransey.png',
     'lib/assets/Tobi.png',
     'lib/assets/adesua.png',
-    '',
+    'lib/assets/toyin.png',
   ];
 
   @override
