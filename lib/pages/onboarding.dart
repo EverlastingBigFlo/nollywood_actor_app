@@ -35,7 +35,7 @@ class _OnboardingState extends State<Onboarding> {
               children: [
                 // Nollywood logo
                 const Positioned(
-                  top: 60,
+                  top: 70,
                   child: Padding(
                     padding: EdgeInsets.only(left: 30),
                     child: Image(
