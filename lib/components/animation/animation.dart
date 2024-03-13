@@ -48,14 +48,16 @@ class SlideAnimation extends StatefulWidget {
     required this.child,
     required this.beginOffset,
     required this.endOffset,
-    required this.duration, required position,
+    required this.duration,
+    required position,
   });
 
   @override
   _SlideAnimationState createState() => _SlideAnimationState();
 }
 
-class _SlideAnimationState extends State<SlideAnimation> with SingleTickerProviderStateMixin {
+class _SlideAnimationState extends State<SlideAnimation>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Offset> _animation;
 
@@ -63,7 +65,8 @@ class _SlideAnimationState extends State<SlideAnimation> with SingleTickerProvid
   void initState() {
     super.initState();
     _controller = AnimationController(duration: widget.duration, vsync: this);
-    _animation = Tween<Offset>(begin: widget.beginOffset, end: widget.endOffset).animate(_controller);
+    _animation = Tween<Offset>(begin: widget.beginOffset, end: widget.endOffset)
+        .animate(_controller);
     _controller.forward();
   }
 
@@ -72,7 +75,7 @@ class _SlideAnimationState extends State<SlideAnimation> with SingleTickerProvid
     _controller.dispose();
     super.dispose();
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return SlideTransition(
@@ -80,5 +83,4 @@ class _SlideAnimationState extends State<SlideAnimation> with SingleTickerProvid
       child: widget.child,
     );
   }
-
 }
