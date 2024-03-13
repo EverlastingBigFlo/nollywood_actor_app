@@ -28,18 +28,22 @@ class _OnboardingState extends State<Onboarding> {
                   ),
                 ),
 
-                // the actors section 
-                Positioned(child: Padding(padding: EdgeInsets.all(0),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Padding(padding: EdgeInsets.all(0),
-                        child: Image(image: AssetImage('')),)
-                      ],
-                    )
-                  ],
-                ),
+                // the actors section
+                Positioned(
+                    child: Padding(
+                  padding: EdgeInsets.all(0),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(0),
+                            child: Image(image: AssetImage('')),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ))
               ],
             ),
