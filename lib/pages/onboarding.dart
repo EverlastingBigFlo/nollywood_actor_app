@@ -30,22 +30,23 @@ class _OnboardingState extends State<Onboarding> {
 
                 // the actors section
                 Positioned(
+                    top: 250,
                     child: Padding(
-                  padding: EdgeInsets.all(0),
-                  child: Column(
-                    children: [
-                      Row(
+                      padding: EdgeInsets.all(0),
+                      child: Column(
                         children: [
-                          Padding(
-                            padding: EdgeInsets.all(0),
-                            child: Image(
-                                image: AssetImage('lib/assets/funke.png')),
+                          Row(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.all(0),
+                                child: Image(
+                                    image: AssetImage('lib/assets/funke.png')),
+                              )
+                            ],
                           )
                         ],
-                      )
-                    ],
-                  ),
-                ))
+                      ),
+                    ))
               ],
             ),
           ),
