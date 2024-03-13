@@ -122,10 +122,10 @@ class _OnboardingState extends State<Onboarding> {
   // List of image paths
   final List<String> myFirstActors = [
     'lib/assets/funke.png',
-    'lib/assets/funke.png',
-    'lib/assets/funke.png',
-    'lib/assets/funke.png',
-    'lib/assets/funke.png',
+    'lib/assets/Ransey.png',
+    'lib/assets/Tobi.png',
+    'lib/assets/adesua.png',
+    '',
   ];
 
   @override
@@ -151,8 +151,9 @@ class _OnboardingState extends State<Onboarding> {
                 // Actors section
                 Positioned(
                   top: 250,
+                  right: -23,
                   child: Transform(
-                    transform: Matrix4.skewY(3),
+                    transform: Matrix4.skew(-3, 3),
                     child: Padding(
                       padding: const EdgeInsets.all(0),
                       child: Column(
