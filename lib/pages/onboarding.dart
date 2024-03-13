@@ -38,7 +38,8 @@ class _OnboardingState extends State<Onboarding> {
                         children: [
                           Padding(
                             padding: EdgeInsets.all(0),
-                            child: Image(image: AssetImage('')),
+                            child: Image(
+                                image: AssetImage('lib/assets/funke.png')),
                           )
                         ],
                       )
