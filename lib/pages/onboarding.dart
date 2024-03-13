@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({Key? key}) : super(key: key);
@@ -18,15 +17,14 @@ class _OnboardingState extends State<Onboarding> {
           Expanded(
             child: Stack(
               children: [
-                Row(
-                  children: [
-                    Positioned(
-                      bottom: 5,
-                      child: Image(
-                        image: AssetImage('lib/assets/Group 39.png'),
-                      ),
+                Positioned(
+                  top: 55,
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 30),
+                    child: Image(
+                      image: AssetImage('lib/assets/Group 39.png'),
                     ),
-                  ],
+                  ),
                 ),
               ],
             ),
