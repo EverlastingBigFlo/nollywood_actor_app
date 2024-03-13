@@ -10,6 +10,8 @@ class Onboarding extends StatefulWidget {
 class _OnboardingState extends State<Onboarding> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.white,
+    );
   }
 }
