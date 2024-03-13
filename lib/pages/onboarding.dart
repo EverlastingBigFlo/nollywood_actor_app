@@ -46,6 +46,54 @@ class _OnboardingState extends State<Onboarding> {
                                 ),
                               ),
                             ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: const Image(
+                                  image: AssetImage('lib/assets/funke.png'),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: const Image(
+                                  image: AssetImage('lib/assets/funke.png'),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: const Image(
+                                  image: AssetImage('lib/assets/funke.png'),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: const Image(
+                                  image: AssetImage('lib/assets/funke.png'),
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                       ],
