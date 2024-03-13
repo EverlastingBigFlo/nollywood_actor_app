@@ -151,9 +151,8 @@ class _OnboardingState extends State<Onboarding> {
                 // Actors section
                 Positioned(
                   top: 250,
-                  child: Transform.translate(
-                    // angle: -170,
-                    offset: const Offset(0.1, 15.1),
+                  child: Transform.rotate(
+                    angle: -170,
                     child: Padding(
                       padding: const EdgeInsets.all(0),
                       child: Column(
