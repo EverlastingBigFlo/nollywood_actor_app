@@ -48,7 +48,7 @@ class SlideAnimation extends StatefulWidget {
     required this.child,
     required this.beginOffset,
     required this.endOffset,
-    required this.duration,
+    required this.duration, required position,
   });
 
   @override
