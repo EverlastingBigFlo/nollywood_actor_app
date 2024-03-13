@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-
 class MyTexts extends StatelessWidget {
   final Color color;
   final String text;
   final double fontSize;
   final FontWeight fontWeight;
+
   
   const MyTexts(
       {super.key,
