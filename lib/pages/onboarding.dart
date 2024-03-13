@@ -28,7 +28,7 @@ class _OnboardingState extends State<Onboarding> {
               children: [
                 // Nollywood logo
                 const Positioned(
-                  top: 55,
+                  top: 60,
                   child: Padding(
                     padding: EdgeInsets.only(left: 30),
                     child: Image(
@@ -50,7 +50,7 @@ class _OnboardingState extends State<Onboarding> {
                           Row(
                             children: myFirstActors.map((path) {
                               return Padding(
-                                padding: const EdgeInsets.all(10),
+                                padding: const EdgeInsets.all(12),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                   child: Image(
