@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nollywood_actor_app/pages/splash.dart';
 
+import 'pages/main_first.dart';
+import 'pages/onboarding.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -20,6 +23,8 @@ class _MyAppState extends State<MyApp> {
       initialRoute: '/',
       routes: {
         '/': (context) => const Splash(),
+        'onboarding': (context) => const Onboarding(),
+        'mainScreen': (context) => const MainScreen(),
       },
     );
   }

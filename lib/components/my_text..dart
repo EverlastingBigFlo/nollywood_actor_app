@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+
 class MyTexts extends StatelessWidget {
   final Color color;
   final String text;
   final double fontSize;
   final FontWeight fontWeight;
 
-  
   const MyTexts(
       {super.key,
       required this.color,
@@ -17,7 +17,7 @@ class MyTexts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: TextStyle(color: color),
+      style: TextStyle(color: color, fontFamily: 'Satoshi'),
       textScaleFactor: fontSize,
     );
   }
