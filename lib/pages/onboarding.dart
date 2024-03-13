@@ -17,15 +17,21 @@ class _OnboardingState extends State<Onboarding> {
           Expanded(
             child: Stack(
               children: [
+                // nollywood logo
                 Positioned(
                   top: 55,
                   child: Padding(
                     padding: EdgeInsets.only(left: 30),
                     child: Image(
-                      image: AssetImage('lib/assets/Group 39.svg'),
+                      image: AssetImage('lib/assets/Group 39.png'),
                     ),
                   ),
                 ),
+
+                // the actors section 
+                Positioned(child: Padding(padding: EdgeInsets.all(0),
+                
+                ))
               ],
             ),
           ),
