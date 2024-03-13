@@ -31,9 +31,9 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SlideAnimation(
-            beginOffset: const Offset(0.0, -1.0),
+            beginOffset: const Offset(0.0, -1.5),
             endOffset: Offset.zero,
-            duration: const Duration(seconds: 1),
+            duration: const Duration(seconds: 2),
             position: _animation,
             child: const Expanded(
               child: Center(
