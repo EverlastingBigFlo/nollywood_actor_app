@@ -16,7 +16,7 @@ class _SplashState extends State<Splash> {
         child: Row(
           children: [
             Column(
-              children: [Image(image: AssetImage('ass'))],
+              children: [Image(image: AssetImage('lib/assets/Group 38.png'))],
             )
           ],
         ),
