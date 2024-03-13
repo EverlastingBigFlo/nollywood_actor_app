@@ -17,11 +17,11 @@ class _OnboardingState extends State<Onboarding> {
     'lib/assets/toyin.png',
   ];
   final List<String> mySecondActors = [
-    'lib/assets/funke.png',
-    'lib/assets/Ransey.png',
-    'lib/assets/Tobi.png',
-    'lib/assets/adesua.png',
-    'lib/assets/toyin.png',
+    'lib/assets/iniedo.png',
+    'lib/assets/kanayo.png',
+    'lib/assets/iyabo.png',
+    'lib/assets/Odun.png',
+    'lib/assets/saka.png',
   ];
 
   @override
@@ -75,7 +75,7 @@ class _OnboardingState extends State<Onboarding> {
 
                 Positioned(
                   top: 400,
-                  right: -45,
+                  right: -55,
                   child: Transform(
                     transform: Matrix4.skew(-3, 3),
                     child: Padding(
