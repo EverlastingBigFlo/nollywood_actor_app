@@ -151,8 +151,8 @@ class _OnboardingState extends State<Onboarding> {
                 // Actors section
                 Positioned(
                   top: 250,
-                  child: Transform.rotate(
-                    angle: -170,
+                  child: Transform(
+                    transform: Matrix4.skewY(3),
                     child: Padding(
                       padding: const EdgeInsets.all(0),
                       child: Column(
