@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class Onboarding extends StatefulWidget {
-  const Onboarding({super.key});
+  const Onboarding({Key? key}) : super(key: key);
 
   @override
   State<Onboarding> createState() => _OnboardingState();
@@ -15,18 +15,22 @@ class _OnboardingState extends State<Onboarding> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          Stack(
-            children: [
-              Positioned(
-                bottom: 1,
-                child: Row(
+          Expanded(
+            child: Stack(
+              children: [
+                Row(
                   children: [
-                    Image(image: AssetImage('lib/assets/Group 39.png'))
+                    Positioned(
+                      bottom: 5,
+                      child: Image(
+                        image: AssetImage('lib/assets/Group 39.png'),
+                      ),
+                    ),
                   ],
                 ),
-              )
-            ],
-          )
+              ],
+            ),
+          ),
         ],
       ),
     );
