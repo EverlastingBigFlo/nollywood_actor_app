@@ -43,7 +43,6 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
               ),
             ),
           ),
-          const SizedBox(),
           const Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
@@ -56,9 +55,9 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
     );
   }
 
-  // @override
-  // void dispose() {
-  //   _controller.dispose();
-  //   super.dispose();
-  // }
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
 }
