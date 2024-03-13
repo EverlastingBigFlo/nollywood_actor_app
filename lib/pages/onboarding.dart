@@ -22,7 +22,7 @@ class _OnboardingState extends State<Onboarding> {
                   child: Padding(
                     padding: EdgeInsets.only(left: 30),
                     child: Image(
-                      image: AssetImage('lib/assets/Group 39.png'),
+                      image: AssetImage('lib/assets/Group 39.svg'),
                     ),
                   ),
                 ),
