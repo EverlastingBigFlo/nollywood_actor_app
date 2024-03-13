@@ -26,7 +26,10 @@ class _SplashState extends State<Splash> {
             alignment: Alignment.bottomCenter,
             child: Padding(
               padding: EdgeInsets.only(bottom: 20),
-              child: Icon(Icons.phone_bluetooth_speaker),
+              child: Icon(
+                Icons.refresh,
+                color: Colors.white,
+              ),
             ),
           ),
         ],
