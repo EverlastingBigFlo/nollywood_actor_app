@@ -68,6 +68,12 @@ class _SlideAnimationState extends State<SlideAnimation> with SingleTickerProvid
   }
 
   @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+  
+  @override
   Widget build(BuildContext context) {
     return SlideTransition(
       position: _animation,
@@ -75,9 +81,4 @@ class _SlideAnimationState extends State<SlideAnimation> with SingleTickerProvid
     );
   }
 
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
 }
