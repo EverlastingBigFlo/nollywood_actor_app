@@ -120,7 +120,7 @@ class Onboarding extends StatefulWidget {
 
 class _OnboardingState extends State<Onboarding> {
   // List of image paths
-  final List<String> imagePaths = [
+  final List<String> myFirstActors = [
     'lib/assets/funke.png',
     'lib/assets/funke.png',
     'lib/assets/funke.png',
@@ -156,7 +156,7 @@ class _OnboardingState extends State<Onboarding> {
                     child: Column(
                       children: [
                         Row(
-                          children: imagePaths.map((path) {
+                          children: myFirstActors.map((path) {
                             return Padding(
                               padding: const EdgeInsets.all(10),
                               child: ClipRRect(
