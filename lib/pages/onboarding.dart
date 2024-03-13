@@ -151,24 +151,27 @@ class _OnboardingState extends State<Onboarding> {
                 // Actors section
                 Positioned(
                   top: 250,
-                  child: Padding(
-                    padding: const EdgeInsets.all(0),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: myFirstActors.map((path) {
-                            return Padding(
-                              padding: const EdgeInsets.all(10),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                child: Image(
-                                  image: AssetImage(path),
+                  child: Transform.rotate(
+                    angle: -100,
+                    child: Padding(
+                      padding: const EdgeInsets.all(0),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: myFirstActors.map((path) {
+                              return Padding(
+                                padding: const EdgeInsets.all(10),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(10),
+                                  child: Image(
+                                    image: AssetImage(path),
+                                  ),
                                 ),
-                              ),
-                            );
-                          }).toList(),
-                        ),
-                      ],
+                              );
+                            }).toList(),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
