@@ -10,7 +10,7 @@ class Onboarding extends StatefulWidget {
 class _OnboardingState extends State<Onboarding> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
         children: [
@@ -18,7 +18,7 @@ class _OnboardingState extends State<Onboarding> {
             child: Stack(
               children: [
                 // nollywood logo
-                Positioned(
+                const Positioned(
                   top: 55,
                   child: Padding(
                     padding: EdgeInsets.only(left: 30),
@@ -30,23 +30,28 @@ class _OnboardingState extends State<Onboarding> {
 
                 // the actors section
                 Positioned(
-                    top: 250,
-                    child: Padding(
-                      padding: EdgeInsets.all(0),
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.all(0),
-                                child: Image(
-                                    image: AssetImage('lib/assets/funke.png')),
-                              )
-                            ],
-                          )
-                        ],
-                      ),
-                    ))
+                  top: 250,
+                  child: Padding(
+                    padding: const EdgeInsets.all(0),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: const Image(
+                                  image: AssetImage('lib/assets/funke.png'),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
