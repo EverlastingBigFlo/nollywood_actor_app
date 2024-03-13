@@ -153,7 +153,7 @@ class _OnboardingState extends State<Onboarding> {
                   top: 250,
                   child: Transform.translate(
                     // angle: -170,
-                    offset: const Offset(0.1, 0.1),
+                    offset: const Offset(0.1, 15.1),
                     child: Padding(
                       padding: const EdgeInsets.all(0),
                       child: Column(
