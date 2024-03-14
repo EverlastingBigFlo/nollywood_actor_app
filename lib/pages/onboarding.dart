@@ -181,7 +181,13 @@ class _OnboardingState extends State<Onboarding> {
                           BorderRadius.circular(8), // Set border radius
                     ),
                   ),
-                  child: const Text('Explore as an actor'),
+                  child: const Text(
+                    'Explore as an actor',
+                    style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
+                  ),
                 )
               ],
             ),
