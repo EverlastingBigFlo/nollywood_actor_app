@@ -106,120 +106,111 @@ class _OnboardingState extends State<Onboarding> {
             ),
           ),
           // headline section
-          Transform.translate(
-            offset: const Offset(0.0, -150.0),
-            child: const Column(
-              children: [
-                Text(
-                  'For actors, directors, and ',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold),
-                ),
-                Text(
-                  'everyone in-between',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
+          const Column(
+            children: [
+              Text(
+                'For actors, directors, and ',
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold),
+              ),
+              Text(
+                'everyone in-between',
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold),
+              ),
+            ],
           ),
 
           // start explore
-          Transform.translate(
-            offset: const Offset(0.0, -110.0),
-            child: const Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SizedBox(
-                  height: 1,
-                  width: 100,
-                  child: Divider(
-                    color: Colors.black,
-                    thickness: 0.2,
-                  ),
+          const Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 1,
+                width: 100,
+                child: Divider(
+                  color: Colors.black,
+                  thickness: 0.2,
                 ),
-                SizedBox(width: 20),
-                Text(
-                  'Start exploring',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 12,
-                    fontWeight: FontWeight.w200,
-                  ),
+              ),
+              SizedBox(width: 20),
+              Text(
+                'Start exploring',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w200,
                 ),
-                SizedBox(width: 20),
-                SizedBox(
-                  height: 1,
-                  width: 100,
-                  child: Divider(
-                    color: Colors.black,
-                    thickness: 0.2,
-                  ),
+              ),
+              SizedBox(width: 20),
+              SizedBox(
+                height: 1,
+                width: 100,
+                child: Divider(
+                  color: Colors.black,
+                  thickness: 0.2,
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
 
           // buttons section
-          Transform.translate(
-            offset: const Offset(0.0, -85.0),
-            child: Column(
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, 'mainscreen');
-                  },
-                  style: ElevatedButton.styleFrom(
-                    elevation: 0,
-                    backgroundColor: Colors.black,
-                    fixedSize: const Size(double.infinity, 60),
-                    minimumSize: const Size(200, 60),
-                    maximumSize: const Size(370, 60),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                  ),
-                  child: const Text(
-                    'Explore as an actor',
-                    style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
+          Column(
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, 'mainscreen');
+                },
+                style: ElevatedButton.styleFrom(
+                  elevation: 0,
+                  backgroundColor: Colors.black,
+                  fixedSize: const Size(double.infinity, 60),
+                  minimumSize: const Size(200, 60),
+                  maximumSize: const Size(370, 60),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                const SizedBox(
-                  height: 20,
+                child: const Text(
+                  'Explore as an actor',
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    elevation: 0,
-                    backgroundColor: Colors.white,
-                    fixedSize: const Size(double.infinity, 60),
-                    minimumSize: const Size(200, 60),
-                    maximumSize: const Size(370, 60),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    side: const BorderSide(
-                      color: Colors.black, // Set the outline color
-                      width: 1, // Set the outline width
-                    ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  elevation: 0,
+                  backgroundColor: Colors.white,
+                  fixedSize: const Size(double.infinity, 60),
+                  minimumSize: const Size(200, 60),
+                  maximumSize: const Size(370, 60),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
                   ),
-                  child: const Text(
-                    'Explore as a producer',
-                    style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w300),
+                  side: const BorderSide(
+                    color: Colors.black, // Set the outline color
+                    width: 1, // Set the outline width
                   ),
-                )
-              ],
-            ),
+                ),
+                child: const Text(
+                  'Explore as a producer',
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w300),
+                ),
+              )
+            ],
           )
         ],
       ),
