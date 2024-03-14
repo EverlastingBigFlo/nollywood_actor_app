@@ -2,7 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:nollywood_actor_app/pages/util/button.dart';
 
 class PostDetails extends StatefulWidget {
-  const PostDetails({super.key});
+  final String username;
+  final String description;
+  final String numbersOfLikes;
+  final String numbersOfComment;
+  final String NumbersOfShare;
+  final userPost;
+  const PostDetails(
+      {super.key,
+      required this.username,
+      required this.description,
+      required this.numbersOfLikes,
+      required this.numbersOfComment,
+      required this.NumbersOfShare,
+      this.userPost});
 
   @override
   State<PostDetails> createState() => _PostDetailsState();
@@ -11,7 +24,7 @@ class PostDetails extends StatefulWidget {
 class _PostDetailsState extends State<PostDetails> {
   @override
   Widget build(BuildContext context) {
-    return    Scaffold(
+    return Scaffold(
       body: Stack(
         children: [
           // username and caption
@@ -67,6 +80,6 @@ class _PostDetailsState extends State<PostDetails> {
         ],
       ),
     );
-  ;
+    ;
   }
 }
