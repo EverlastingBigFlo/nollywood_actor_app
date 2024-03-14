@@ -46,6 +46,11 @@ class _MainScreenState extends State<MainScreen> {
                 ],
               ),
             ),
+          ),
+          //Buttons
+
+          Container(
+            
           )
         ],
       ),
