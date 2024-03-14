@@ -26,6 +26,14 @@ class _OnboardingState extends State<Onboarding> {
 
   @override
   Widget build(BuildContext context) {
+       // Get the screen size
+    final Size screenSize = MediaQuery.of(context).size;
+
+    // Adjustments based on screen size
+    final double logoTopPadding = screenSize.height * 0.05;
+    final double actorsTopPadding = screenSize.height * 0.25;
+    final double headlineBottomPadding = screenSize.height * 0.22;
+    final double startExploreBottomPadding = screenSize.height * 0.17;
     return Scaffold(
       backgroundColor: Colors.white,
       body: Stack(
