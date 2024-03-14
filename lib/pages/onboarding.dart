@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({super.key});
@@ -31,77 +32,79 @@ class _OnboardingState extends State<Onboarding> {
       body: Stack(
         children: [
           // image sections
-          Expanded(
-            child: Stack(
-              children: [
-                // Nollywood logo
-                const Positioned(
-                  top: 70,
-                  child: Padding(
-                    padding: EdgeInsets.only(left: 30),
-                    child: Image(
-                      image: AssetImage('lib/assets/Group 39.png'),
-                    ),
-                  ),
-                ),
-
-                // Actors section
-                Positioned(
-                  top: 200,
-                  right: -45,
-                  child: Transform(
-                    transform: Matrix4.skew(-3, 3),
+          Center(
+            child: Expanded(
+              child: Stack(
+                children: [
+                  // Nollywood logo
+                  const Positioned(
+                    top: 70,
                     child: Padding(
-                      padding: const EdgeInsets.all(0),
-                      child: Column(
-                        children: [
-                          Row(
-                            children: myFirstActors.map((path) {
-                              return Padding(
-                                padding: const EdgeInsets.all(12),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(10),
-                                  child: Image(
-                                    image: AssetImage(path),
-                                  ),
-                                ),
-                              );
-                            }).toList(),
-                          ),
-                        ],
+                      padding: EdgeInsets.only(left: 30),
+                      child: Image(
+                        image: AssetImage('lib/assets/Group 39.png'),
                       ),
                     ),
                   ),
-                ),
 
-                Positioned(
-                  top: 340,
-                  right: -55,
-                  child: Transform(
-                    transform: Matrix4.skew(-3, 3),
-                    child: Padding(
-                      padding: const EdgeInsets.all(0),
-                      child: Column(
-                        children: [
-                          Row(
-                            children: mySecondActors.map((path) {
-                              return Padding(
-                                padding: const EdgeInsets.all(12),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(10),
-                                  child: Image(
-                                    image: AssetImage(path),
+                  // Actors section
+                  Positioned(
+                    top: 200,
+                    right: -45,
+                    child: Transform(
+                      transform: Matrix4.skew(-3, 3),
+                      child: Padding(
+                        padding: const EdgeInsets.all(0),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: myFirstActors.map((path) {
+                                return Padding(
+                                  padding: const EdgeInsets.all(12),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(10),
+                                    child: Image(
+                                      image: AssetImage(path),
+                                    ),
                                   ),
-                                ),
-                              );
-                            }).toList(),
-                          ),
-                        ],
+                                );
+                              }).toList(),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
+
+                  Positioned(
+                    top: 340,
+                    right: -55,
+                    child: Transform(
+                      transform: Matrix4.skew(-3, 3),
+                      child: Padding(
+                        padding: const EdgeInsets.all(0),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: mySecondActors.map((path) {
+                                return Padding(
+                                  padding: const EdgeInsets.all(12),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(10),
+                                    child: Image(
+                                      image: AssetImage(path),
+                                    ),
+                                  ),
+                                );
+                              }).toList(),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
           // headline section
@@ -171,6 +174,7 @@ class _OnboardingState extends State<Onboarding> {
             bottom: 20,
             left: 10,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 ElevatedButton(
                   onPressed: () {
