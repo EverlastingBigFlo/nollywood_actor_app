@@ -109,7 +109,7 @@ class _OnboardingState extends State<Onboarding> {
           ),
           // headline section
           Transform.translate(
-            offset: const Offset(0.0, -240.0),
+            offset: const Offset(0.0, -200.0),
             child: const Column(
               children: [
                 Text(
@@ -176,14 +176,36 @@ class _OnboardingState extends State<Onboarding> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
                     fixedSize: const Size(double.infinity, 60),
-                    minimumSize: Size(double.infinity, .1),
+                    minimumSize: const Size(200, 60),
+                    maximumSize: const Size(370, 60),
                     shape: RoundedRectangleBorder(
-                      borderRadius:
-                          BorderRadius.circular(8), // Set border radius
+                      borderRadius: BorderRadius.circular(8),
                     ),
                   ),
                   child: const Text(
                     'Explore as an actor',
+                    style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.black,
+                    fixedSize: const Size(double.infinity, 60),
+                    minimumSize: const Size(200, 60),
+                    maximumSize: const Size(370, 60),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  child: const Text(
+                    'Explore as a producer',
                     style: TextStyle(
                         fontSize: 16,
                         color: Colors.white,
