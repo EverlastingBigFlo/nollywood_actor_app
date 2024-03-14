@@ -32,27 +32,27 @@ class _PostDetailsState extends State<PostDetails> {
             padding: const EdgeInsets.all(20.0),
             child: Container(
               alignment: const Alignment(-1, 1),
-              child: const Column(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text(
-                    '@AdesuaEtomi',
+                    '@${widget.username}',
                     style:
-                        TextStyle(fontSize: 14.63, fontWeight: FontWeight.w500),
+                        const TextStyle(fontSize: 14.63, fontWeight: FontWeight.w500),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     'The Seagull (Anton Chekhov)',
                     style:
                         TextStyle(fontSize: 13.59, fontWeight: FontWeight.w300),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
-                  Text(
+                  const Text(
                     '#hollywood-english',
                     style: TextStyle(
                         fontSize: 13.593, fontWeight: FontWeight.w400),
