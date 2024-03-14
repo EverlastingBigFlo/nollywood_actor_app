@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -76,31 +75,29 @@ class _OnboardingState extends State<Onboarding> {
                   ),
                 ),
 
-                Expanded(
-                  child: Positioned(
-                    top: 400,
-                    right: -55,
-                    child: Transform(
-                      transform: Matrix4.skew(-3, 3),
-                      child: Padding(
-                        padding: const EdgeInsets.all(0),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: mySecondActors.map((path) {
-                                return Padding(
-                                  padding: const EdgeInsets.all(12),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image(
-                                      image: AssetImage(path),
-                                    ),
+                Positioned(
+                  top: 400,
+                  right: -55,
+                  child: Transform(
+                    transform: Matrix4.skew(-3, 3),
+                    child: Padding(
+                      padding: const EdgeInsets.all(0),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: mySecondActors.map((path) {
+                              return Padding(
+                                padding: const EdgeInsets.all(12),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(10),
+                                  child: Image(
+                                    image: AssetImage(path),
                                   ),
-                                );
-                              }).toList(),
-                            ),
-                          ],
-                        ),
+                                ),
+                              );
+                            }).toList(),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -109,42 +106,32 @@ class _OnboardingState extends State<Onboarding> {
             ),
           ),
           // headline section
-          const Expanded(
-            child: Column(
+          Transform.translate(
+            offset: const Offset(0.0, -150.0),
+            child: const Column(
               children: [
-                Stack(
-                  children: [
-                    Positioned(
-                      top: -10,
-                      child: Text(
-                        'For actors, directors, and ',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      top: 24, // Adjust this value as needed
-                      child: Text(
-                        'everyone in-between',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ],
+                Text(
+                  'For actors, directors, and ',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  'everyone in-between',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold),
                 ),
               ],
             ),
           ),
 
           // start explore
-          const Expanded(
-            child: Row(
+          Transform.translate(
+            offset: const Offset(0.0, -110.0),
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
@@ -178,7 +165,8 @@ class _OnboardingState extends State<Onboarding> {
           ),
 
           // buttons section
-          Expanded(
+          Transform.translate(
+            offset: const Offset(0.0, -85.0),
             child: Column(
               children: [
                 ElevatedButton(
