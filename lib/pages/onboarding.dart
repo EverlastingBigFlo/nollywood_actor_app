@@ -80,24 +80,26 @@ class _OnboardingState extends State<Onboarding> {
                   right: -55,
                   child: Transform(
                     transform: Matrix4.skew(-3, 3),
-                    child: Padding(
-                      padding: const EdgeInsets.all(0),
-                      child: Column(
-                        children: [
-                          Row(
-                            children: mySecondActors.map((path) {
-                              return Padding(
-                                padding: const EdgeInsets.all(12),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(10),
-                                  child: Image(
-                                    image: AssetImage(path),
+                    child: Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.all(0),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: mySecondActors.map((path) {
+                                return Padding(
+                                  padding: const EdgeInsets.all(12),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(10),
+                                    child: Image(
+                                      image: AssetImage(path),
+                                    ),
                                   ),
-                                ),
-                              );
-                            }).toList(),
-                          ),
-                        ],
+                                );
+                              }).toList(),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
