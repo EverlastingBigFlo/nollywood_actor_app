@@ -11,9 +11,12 @@ class MyButton extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 15.0),
       child: Column(
         children: [
-          Icon(icon),
-          SizedBox(height: 25),
+          Icon(
+            icon,
+            size: 40,
+          ),
           Text(number),
+          SizedBox(height: 25),
         ],
       ),
     );
