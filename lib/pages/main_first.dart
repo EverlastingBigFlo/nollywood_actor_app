@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nollywood_actor_app/pages/util/button.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -56,16 +57,10 @@ class _MainScreenState extends State<MainScreen> {
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
+                  MyButton(number: '256',),
                   Icon(Icons.favorite),
-                  Text('256'),
-                  SizedBox(
-                    height: 25,
-                  ),
                   Icon(Icons.chat),
                   Text('25'),
-                  SizedBox(
-                    height: 25,
-                  ),
                   Icon(Icons.share),
                   Text('12'),
                 ],

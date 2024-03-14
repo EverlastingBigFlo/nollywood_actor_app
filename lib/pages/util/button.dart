@@ -7,13 +7,15 @@ class MyButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(padding: const EdgeInsets.symmetric(vertical: 15.0),
-    child: Column(
-      children: [
-        icon,SizedBox(height: 25),
-        Text(number),
-      ],
-    ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 15.0),
+      child: Column(
+        children: [
+          Icon(icon),
+          SizedBox(height: 25),
+          Text(number),
+        ],
+      ),
     );
   }
 }
