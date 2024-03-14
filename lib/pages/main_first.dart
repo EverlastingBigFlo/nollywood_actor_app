@@ -57,12 +57,9 @@ class _MainScreenState extends State<MainScreen> {
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  MyButton(number: '256',),
-                  Icon(Icons.favorite),
-                  Icon(Icons.chat),
-                  Text('25'),
-                  Icon(Icons.share),
-                  Text('12'),
+                  MyButton(icon: Icons.favorite, number: '256'),
+                  MyButton(icon: Icons.chat, number: '25'),
+                  MyButton(icon: Icons.share, number: '12'),
                 ],
               ),
             ),
