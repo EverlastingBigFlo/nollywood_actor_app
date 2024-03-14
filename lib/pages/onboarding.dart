@@ -172,16 +172,17 @@ class _OnboardingState extends State<Onboarding> {
             child: Column(
               children: [
                 ElevatedButton(
-                    onPressed: () {},
-                    child: const Text('Explore as an actor'),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.black, // Background color
-                      shape: RoundedRectangleBorder(
-                        borderRadius:
-                            BorderRadius.circular(20), // Rounded corners
-                      ),
-                      padding: EdgeInsets.symmetric(vertical: 10),
-                    ))
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.black,
+                    fixedSize: const Size(double.infinity, 60),
+                    shape: RoundedRectangleBorder(
+                      borderRadius:
+                          BorderRadius.circular(8), // Set border radius
+                    ),
+                  ),
+                  child: const Text('Explore as an actor'),
+                )
               ],
             ),
           )
