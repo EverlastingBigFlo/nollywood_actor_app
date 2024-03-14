@@ -49,17 +49,27 @@ class _MainScreenState extends State<MainScreen> {
           ),
 
           //Buttons
-          Container(
-            alignment: const Alignment(1, 1),
-            child: const Column(
-              children: [
-                Icon(Icons.favorite),
-                Text('256'),
-                Icon(Icons.chat),
-                Text('256'),
-                Icon(Icons.share),
-                Text('256'),
-              ],
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Container(
+              alignment: const Alignment(1, 1),
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Icon(Icons.favorite),
+                  Text('256'),
+                  SizedBox(
+                    height: 25,
+                  ),
+                  Icon(Icons.chat),
+                  Text('25'),
+                  SizedBox(
+                    height: 25,
+                  ),
+                  Icon(Icons.share),
+                  Text('12'),
+                ],
+              ),
             ),
           )
         ],
