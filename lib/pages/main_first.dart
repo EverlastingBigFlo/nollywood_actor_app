@@ -12,6 +12,13 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
-    return PostDetails();
+    return const PostDetails(
+      username: 'AdesuaEtomi',
+      songTitle: 'The Seagull (Anton Chekhov)',
+      description: '#hollywood-english',
+      numbersOfLikes: '256',
+      numbersOfComment: '25',
+      NumbersOfShare: '12',
+    );
   }
 }

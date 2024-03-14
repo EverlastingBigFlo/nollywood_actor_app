@@ -3,6 +3,7 @@ import 'package:nollywood_actor_app/pages/util/button.dart';
 
 class PostDetails extends StatefulWidget {
   final String username;
+  final String songTitle;
   final String description;
   final String numbersOfLikes;
   final String numbersOfComment;
@@ -11,6 +12,7 @@ class PostDetails extends StatefulWidget {
   const PostDetails(
       {super.key,
       required this.username,
+      required this.songTitle,
       required this.description,
       required this.numbersOfLikes,
       required this.numbersOfComment,
@@ -38,22 +40,22 @@ class _PostDetailsState extends State<PostDetails> {
                 children: [
                   Text(
                     '@${widget.username}',
-                    style:
-                        const TextStyle(fontSize: 14.63, fontWeight: FontWeight.w500),
+                    style: const TextStyle(
+                        fontSize: 14.63, fontWeight: FontWeight.w500),
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                  const Text(
-                    'The Seagull (Anton Chekhov)',
+                  Text(
+                    widget.songTitle,
                     style:
                         TextStyle(fontSize: 13.59, fontWeight: FontWeight.w300),
                   ),
                   const SizedBox(
                     height: 5,
                   ),
-                  const Text(
-                    '#hollywood-english',
+                  Text(
+                    widget.description,
                     style: TextStyle(
                         fontSize: 13.593, fontWeight: FontWeight.w400),
                   ),
@@ -67,12 +69,20 @@ class _PostDetailsState extends State<PostDetails> {
             padding: const EdgeInsets.all(20.0),
             child: Container(
               alignment: const Alignment(1, 1),
-              child: const Column(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  MyButton(icon: Icons.favorite, number: '256'),
-                  MyButton(icon: Icons.chat, number: '25'),
-                  MyButton(icon: Icons.share, number: '12'),
+                  MyButton(icon: Icons.favorite, number: widget.numbersOfLikes),
+                  MyButton(
+                      icon: Icons.chat,
+                      number:
+                          // '25'
+                          widget.numbersOfComment),
+                  MyButton(
+                      icon: Icons.share,
+                      number:
+                          // '12'
+                          widget.NumbersOfShare),
                 ],
               ),
             ),
