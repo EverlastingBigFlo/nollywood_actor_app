@@ -47,10 +47,15 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
           ),
+          
+          
+          
           //Buttons
-
           Container(
-            
+            alignment: Alignment(1, 1),
+            child: Column(children: [
+              
+            ],),
           )
         ],
       ),
