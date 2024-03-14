@@ -131,17 +131,19 @@ class _OnboardingState extends State<Onboarding> {
 
           // start exploring
           Transform.translate(
-            offset: const Offset(0.0, -200.0),
-            child: const Row(
-              children: [
-                Text(
-                  'everyone in-between',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold),
-                ),
-              ],
+            offset: const Offset(0.0, -300.0),
+            child: const Center(
+              child: Row(
+                children: [
+                  Text(
+                    'everyone in-between',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
