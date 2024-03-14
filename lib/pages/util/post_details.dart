@@ -27,7 +27,7 @@ class _PostDetailsState extends State<PostDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('hellio'),
+      // body: Text('hellio'),
       // Stack(
       //   children: [
       //     Container(
