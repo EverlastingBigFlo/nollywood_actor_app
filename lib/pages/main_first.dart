@@ -18,7 +18,7 @@ class _MainScreenState extends State<MainScreen> {
       description: '#hollywood-english',
       numbersOfLikes: '256',
       numbersOfComment: '25',
-      NumbersOfShare: '12',
+      numbersOfShare: '12',
     );
   }
 }

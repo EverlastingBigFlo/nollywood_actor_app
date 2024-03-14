@@ -7,7 +7,7 @@ class PostDetails extends StatefulWidget {
   final String description;
   final String numbersOfLikes;
   final String numbersOfComment;
-  final String NumbersOfShare;
+  final String numbersOfShare;
   final userPost;
   const PostDetails(
       {super.key,
@@ -16,7 +16,7 @@ class PostDetails extends StatefulWidget {
       required this.description,
       required this.numbersOfLikes,
       required this.numbersOfComment,
-      required this.NumbersOfShare,
+      required this.numbersOfShare,
       this.userPost});
 
   @override
@@ -88,7 +88,7 @@ class _PostDetailsState extends State<PostDetails> {
                       icon: Icons.share,
                       number:
                           // '12'
-                          widget.NumbersOfShare),
+                          widget.numbersOfShare),
                 ],
               ),
             ),
