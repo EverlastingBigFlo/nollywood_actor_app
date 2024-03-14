@@ -167,11 +167,14 @@ class _OnboardingState extends State<Onboarding> {
           ),
 
           // buttons section
-          Column(
-            children: [
-              ElevatedButton(
-                  onPressed: () {}, child: const Text('Explore as an actor'))
-            ],
+          Transform.translate(
+            offset: const Offset(0.0, -140.0),
+            child: Column(
+              children: [
+                ElevatedButton(
+                    onPressed: () {}, child: const Text('Explore as an actor'))
+              ],
+            ),
           )
         ],
       ),
