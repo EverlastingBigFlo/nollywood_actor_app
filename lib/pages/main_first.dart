@@ -13,7 +13,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return const PostDetails(
-      userPost: 'lib/assets/For You Page.png',
+      userPost: 'lib/assets/shola.png',
       username: 'AdesuaEtomi',
       songTitle: 'The Seagull (Anton Chekhov)',
       description: '#hollywood-english',
