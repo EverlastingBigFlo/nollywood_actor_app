@@ -29,6 +29,7 @@ class _SplashState extends State<Splash> {
               ),
             ),
           ),
+          // loader section
           Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
