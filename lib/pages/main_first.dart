@@ -14,13 +14,32 @@ class _MainScreenState extends State<MainScreen> {
       body: Stack(
         children: [
           Container(
-            alignment: Alignment(-1, 1),
-            child: Column(
+            alignment: const Alignment(-1, 1),
+            child: const Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Text('@AdesuaEtomi'),
-                Text('The Seagull (Anton Chekhov)'),
-                Text('#')
+                Text(
+                  '@AdesuaEtomi',
+                  style:
+                      TextStyle(fontSize: 14.63, fontWeight: FontWeight.w500),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  'The Seagull (Anton Chekhov)',
+                  style:
+                      TextStyle(fontSize: 13.59, fontWeight: FontWeight.w300),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  '#hollywood-english',
+                  style:
+                      TextStyle(fontSize: 13.593, fontWeight: FontWeight.w400),
+                ),
               ],
             ),
           )
