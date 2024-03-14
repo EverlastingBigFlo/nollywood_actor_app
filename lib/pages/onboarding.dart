@@ -109,7 +109,7 @@ class _OnboardingState extends State<Onboarding> {
           ),
           // headline section
           Transform.translate(
-            offset: const Offset(0.0, -200.0),
+            offset: const Offset(0.0, -150.0),
             child: const Column(
               children: [
                 Text(
@@ -132,7 +132,7 @@ class _OnboardingState extends State<Onboarding> {
 
           // start explore
           Transform.translate(
-            offset: const Offset(0.0, -200.0),
+            offset: const Offset(0.0, -110.0),
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -168,7 +168,7 @@ class _OnboardingState extends State<Onboarding> {
 
           // buttons section
           Transform.translate(
-            offset: const Offset(0.0, -170.0),
+            offset: const Offset(0.0, -85.0),
             child: Column(
               children: [
                 ElevatedButton(
@@ -190,13 +190,13 @@ class _OnboardingState extends State<Onboarding> {
                         fontWeight: FontWeight.bold),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.black,
+                    backgroundColor: Colors.white,
                     fixedSize: const Size(double.infinity, 60),
                     minimumSize: const Size(200, 60),
                     maximumSize: const Size(370, 60),
@@ -208,8 +208,8 @@ class _OnboardingState extends State<Onboarding> {
                     'Explore as a producer',
                     style: TextStyle(
                         fontSize: 16,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
+                        color: Colors.black,
+                        fontWeight: FontWeight.w200),
                   ),
                 )
               ],
