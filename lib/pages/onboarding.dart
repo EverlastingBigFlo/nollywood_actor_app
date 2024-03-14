@@ -32,76 +32,74 @@ class _OnboardingState extends State<Onboarding> {
         children: [
           // image sections
           Center(
-            child: Expanded(
-              child: Stack(
-                children: [
-                  // Nollywood logo
-                  const Positioned(
-                    top: 70,
-                    left: 30,
-                    child: Image(
-                      image: AssetImage('lib/assets/Group 39.png'),
-                    ),
+            child: Stack(
+              children: [
+                // Nollywood logo
+                const Positioned(
+                  top: 70,
+                  left: 30,
+                  child: Image(
+                    image: AssetImage('lib/assets/Group 39.png'),
                   ),
+                ),
 
-                  // Actors section
-                  Positioned(
-                    top: 200,
-                    right: -45,
-                    child: Transform(
-                      transform: Matrix4.skew(-3, 3),
-                      child: Padding(
-                        padding: const EdgeInsets.all(0),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: myFirstActors.map((path) {
-                                return Padding(
-                                  padding: const EdgeInsets.all(12),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image(
-                                      image: AssetImage(path),
-                                    ),
+                // Actors section
+                Positioned(
+                  top: 200,
+                  right: -45,
+                  child: Transform(
+                    transform: Matrix4.skew(-3, 3),
+                    child: Padding(
+                      padding: const EdgeInsets.all(0),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: myFirstActors.map((path) {
+                              return Padding(
+                                padding: const EdgeInsets.all(12),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(10),
+                                  child: Image(
+                                    image: AssetImage(path),
                                   ),
-                                );
-                              }).toList(),
-                            ),
-                          ],
-                        ),
+                                ),
+                              );
+                            }).toList(),
+                          ),
+                        ],
                       ),
                     ),
                   ),
+                ),
 
-                  Positioned(
-                    top: 340,
-                    right: -55,
-                    child: Transform(
-                      transform: Matrix4.skew(-3, 3),
-                      child: Padding(
-                        padding: const EdgeInsets.all(0),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: mySecondActors.map((path) {
-                                return Padding(
-                                  padding: const EdgeInsets.all(12),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image(
-                                      image: AssetImage(path),
-                                    ),
+                Positioned(
+                  top: 340,
+                  right: -55,
+                  child: Transform(
+                    transform: Matrix4.skew(-3, 3),
+                    child: Padding(
+                      padding: const EdgeInsets.all(0),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: mySecondActors.map((path) {
+                              return Padding(
+                                padding: const EdgeInsets.all(12),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(10),
+                                  child: Image(
+                                    image: AssetImage(path),
                                   ),
-                                );
-                              }).toList(),
-                            ),
-                          ],
-                        ),
+                                ),
+                              );
+                            }).toList(),
+                          ),
+                        ],
                       ),
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
           // headline section
