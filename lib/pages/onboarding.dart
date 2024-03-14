@@ -130,23 +130,37 @@ class _OnboardingState extends State<Onboarding> {
             ),
           ),
 
-          // start exploring
+// start explore
           Transform.translate(
-            offset: const Offset(0.0, -250.0),
+            offset: const Offset(0.0, -240.0),
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Divider(
-                  color: Colors.black,
-                  thickness: 2,
-                  height: 200,
+                SizedBox(
+                  height: 1,
+                  width: 100,
+                  child: Divider(
+                    color: Colors.black,
+                    thickness: 0.2,
+                  ),
                 ),
+                SizedBox(width: 20),
                 Text(
                   'Start exploring',
                   style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w300),
+                    color: Colors.black,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w200,
+                  ),
+                ),
+                SizedBox(width: 20),
+                SizedBox(
+                  height: 1,
+                  width: 100,
+                  child: Divider(
+                    color: Colors.black,
+                    thickness: 0.2,
+                  ),
                 ),
               ],
             ),
