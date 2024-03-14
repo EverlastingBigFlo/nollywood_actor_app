@@ -47,15 +47,20 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
           ),
-          
-          
-          
+
           //Buttons
           Container(
-            alignment: Alignment(1, 1),
-            child: Column(children: [
-              
-            ],),
+            alignment: const Alignment(1, 1),
+            child: const Column(
+              children: [
+                Icon(Icons.favorite),
+                Text('256'),
+                Icon(Icons.chat),
+                Text('256'),
+                Icon(Icons.share),
+                Text('256'),
+              ],
+            ),
           )
         ],
       ),
