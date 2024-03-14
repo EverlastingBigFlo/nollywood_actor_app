@@ -109,30 +109,42 @@ class _OnboardingState extends State<Onboarding> {
             ),
           ),
           // headline section
-          Expanded(
-            child: const Column(
+          const Expanded(
+            child: Column(
               children: [
-                Text(
-                  'For actors, directors, and ',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold),
-                ),
-                Text(
-                  'everyone in-between',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold),
+                Stack(
+                  children: [
+                    Positioned(
+                      top: -10,
+                      child: Text(
+                        'For actors, directors, and ',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: 24, // Adjust this value as needed
+                      child: Text(
+                        'everyone in-between',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
           ),
 
           // start explore
-          Expanded(
-            child: const Row(
+          const Expanded(
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
