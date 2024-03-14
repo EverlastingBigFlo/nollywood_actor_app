@@ -11,8 +11,20 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Main Screen'),
+      body: Stack(
+        children: [
+          Container(
+            alignment: Alignment(-1, 1),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text('@AdesuaEtomi'),
+                Text('The Seagull (Anton Chekhov)'),
+                Text('#')
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
