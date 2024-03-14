@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
       initialRoute: '/',
       routes: {
         '/': (context) => const Splash(),
-        'onboarding': (context) => const Onboarding(),
+        'onboarding': (context) =>  Onboarding(key: null,),
         'mainscreen': (context) => const MainScreen(),
       },
     );

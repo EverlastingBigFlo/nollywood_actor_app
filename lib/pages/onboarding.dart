@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({super.key});
@@ -108,124 +107,127 @@ class _OnboardingState extends State<Onboarding> {
             ),
           ),
           // headline section
-          const Positioned(
-            bottom: 230,
-            left: 55,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'For actors, directors, and ',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold),
-                ),
-                Text(
-                  'everyone in-between',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold),
-                ),
-              ],
+          const Center(
+            child: Positioned(
+              top: 230,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'For actors, directors, and ',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    'everyone in-between',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
             ),
           ),
 
           // start explore
-          const Positioned(
-            bottom: 180,
-            left: 35,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SizedBox(
-                  height: 1,
-                  width: 100,
-                  child: Divider(
-                    color: Colors.black,
-                    thickness: 0.2,
+          const Center(
+            child: Positioned(
+              bottom: 180,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: 1,
+                    width: 100,
+                    child: Divider(
+                      color: Colors.black,
+                      thickness: 0.2,
+                    ),
                   ),
-                ),
-                SizedBox(width: 20),
-                Text(
-                  'Start exploring',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 12,
-                    fontWeight: FontWeight.w200,
+                  SizedBox(width: 20),
+                  Text(
+                    'Start exploring',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w200,
+                    ),
                   ),
-                ),
-                SizedBox(width: 20),
-                SizedBox(
-                  height: 1,
-                  width: 100,
-                  child: Divider(
-                    color: Colors.black,
-                    thickness: 0.2,
+                  SizedBox(width: 20),
+                  SizedBox(
+                    height: 1,
+                    width: 100,
+                    child: Divider(
+                      color: Colors.black,
+                      thickness: 0.2,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
 
           // buttons section
-          Positioned(
-            bottom: 20,
-            left: 10,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, 'mainscreen');
-                  },
-                  style: ElevatedButton.styleFrom(
-                    elevation: 0,
-                    backgroundColor: Colors.black,
-                    fixedSize: const Size(double.infinity, 60),
-                    minimumSize: const Size(200, 60),
-                    maximumSize: const Size(370, 60),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
+          Center(
+            child: Positioned(
+              bottom: 20,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'mainscreen');
+                    },
+                    style: ElevatedButton.styleFrom(
+                      elevation: 0,
+                      backgroundColor: Colors.black,
+                      fixedSize: const Size(double.infinity, 60),
+                      minimumSize: const Size(200, 60),
+                      maximumSize: const Size(370, 60),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                    child: const Text(
+                      'Explore as an actor',
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
-                  child: const Text(
-                    'Explore as an actor',
-                    style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
+                  const SizedBox(
+                    height: 20,
                   ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    elevation: 0,
-                    backgroundColor: Colors.white,
-                    fixedSize: const Size(double.infinity, 60),
-                    minimumSize: const Size(200, 60),
-                    maximumSize: const Size(370, 60),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    side: const BorderSide(
-                      color: Colors.black,
-                      width: 1,
-                    ),
-                  ),
-                  child: const Text(
-                    'Explore as a producer',
-                    style: TextStyle(
-                        fontSize: 16,
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      elevation: 0,
+                      backgroundColor: Colors.white,
+                      fixedSize: const Size(double.infinity, 60),
+                      minimumSize: const Size(200, 60),
+                      maximumSize: const Size(370, 60),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      side: const BorderSide(
                         color: Colors.black,
-                        fontWeight: FontWeight.w300),
-                  ),
-                )
-              ],
+                        width: 1,
+                      ),
+                    ),
+                    child: const Text(
+                      'Explore as a producer',
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w300),
+                    ),
+                  )
+                ],
+              ),
             ),
           )
         ],
