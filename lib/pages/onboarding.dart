@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:nollywood_actor_app/components/my_text..dart';
@@ -105,23 +106,44 @@ class _OnboardingState extends State<Onboarding> {
               ],
             ),
           ),
+          // headline section
           Transform.translate(
             offset: const Offset(0.0, -300.0),
             child: const Column(
               children: [
-                MyTexts(
-                    color: Colors.black,
-                    text: 'For actors, directors, and ',
-                    fontSize: 2,
-                    fontWeight: FontWeight.bold),
-                MyTexts(
-                    color: Colors.black,
-                    text: 'everyone in-between',
-                    fontSize: 2,
-                    fontWeight: FontWeight.bold)
+                Text(
+                  'For actors, directors, and ',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  'everyone in-between',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold),
+                ),
               ],
             ),
-          )
+          ),
+
+          // start exploring
+          Transform.translate(
+            offset: const Offset(0.0, -200.0),
+            child: const Row(
+              children: [
+                Text(
+                  'everyone in-between',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
