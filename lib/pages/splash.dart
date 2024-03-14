@@ -33,7 +33,7 @@ class _SplashState extends State<Splash> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-                padding: EdgeInsets.only(bottom: 20),
+                padding: EdgeInsets.only(bottom: 60),
                 child: Image(image: AssetImage('lib/assets/loader.png'))),
           ),
         ],
