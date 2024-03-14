@@ -48,7 +48,7 @@ class _OnboardingState extends State<Onboarding> {
 
                 // Actors section
                 Positioned(
-                  top: 250,
+                  top: 200,
                   right: -45,
                   child: Transform(
                     transform: Matrix4.skew(-3, 3),
@@ -76,7 +76,7 @@ class _OnboardingState extends State<Onboarding> {
                 ),
 
                 Positioned(
-                  top: 400,
+                  top: 340,
                   right: -55,
                   child: Transform(
                     transform: Matrix4.skew(-3, 3),
