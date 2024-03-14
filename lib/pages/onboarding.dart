@@ -130,7 +130,7 @@ class _OnboardingState extends State<Onboarding> {
 
           // start explore
           const Positioned(
-            bottom: 180,
+            bottom: 200,
             left: 0,
             right: 0,
             child: Row(
