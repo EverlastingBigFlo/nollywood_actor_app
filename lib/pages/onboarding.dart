@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -75,12 +76,12 @@ class _OnboardingState extends State<Onboarding> {
                   ),
                 ),
 
-                Positioned(
-                  top: 400,
-                  right: -55,
-                  child: Transform(
-                    transform: Matrix4.skew(-3, 3),
-                    child: Expanded(
+                Expanded(
+                  child: Positioned(
+                    top: 400,
+                    right: -55,
+                    child: Transform(
+                      transform: Matrix4.skew(-3, 3),
                       child: Padding(
                         padding: const EdgeInsets.all(0),
                         child: Column(
@@ -108,8 +109,7 @@ class _OnboardingState extends State<Onboarding> {
             ),
           ),
           // headline section
-          Transform.translate(
-            offset: const Offset(0.0, -150.0),
+          Expanded(
             child: const Column(
               children: [
                 Text(
@@ -131,8 +131,7 @@ class _OnboardingState extends State<Onboarding> {
           ),
 
           // start explore
-          Transform.translate(
-            offset: const Offset(0.0, -110.0),
+          Expanded(
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -167,8 +166,7 @@ class _OnboardingState extends State<Onboarding> {
           ),
 
           // buttons section
-          Transform.translate(
-            offset: const Offset(0.0, -85.0),
+          Expanded(
             child: Column(
               children: [
                 ElevatedButton(
