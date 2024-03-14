@@ -31,8 +31,8 @@ class _PostDetailsState extends State<PostDetails> {
         children: [
           Container(
             alignment: const Alignment(0, 0),
-            child: const Image(
-              image: AssetImage('lib/assets/For You Page.png'),
+            child: Image(
+              image: AssetImage(widget.userPost),
             ),
           ),
           // username and caption
