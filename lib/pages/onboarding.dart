@@ -104,7 +104,7 @@ class _OnboardingState extends State<Onboarding> {
           ),
           // headline section
           const Positioned(
-            bottom: 230,
+            bottom: 270,
             left: 0,
             right: 0,
             child: Column(
