@@ -33,7 +33,6 @@ class _OnboardingState extends State<Onboarding> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-
           // image sections
           Expanded(
             child: Stack(
@@ -110,7 +109,7 @@ class _OnboardingState extends State<Onboarding> {
           ),
           // headline section
           Transform.translate(
-            offset: const Offset(0.0, -300.0),
+            offset: const Offset(0.0, -280.0),
             child: const Column(
               children: [
                 Text(
@@ -133,19 +132,18 @@ class _OnboardingState extends State<Onboarding> {
 
           // start exploring
           Transform.translate(
-            offset: const Offset(0.0, -300.0),
-            child: const Center(
-              child: Row(
-                children: [
-                  Text(
-                    'everyone in-between',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
+            offset: const Offset(0.0, -250.0),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'everyone in-between',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
             ),
           ),
         ],
