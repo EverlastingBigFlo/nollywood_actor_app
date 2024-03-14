@@ -19,6 +19,7 @@ class _MainScreenState extends State<MainScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
+                // username and caption
                 Text(
                   '@AdesuaEtomi',
                   style:
