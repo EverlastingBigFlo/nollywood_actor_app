@@ -136,12 +136,17 @@ class _OnboardingState extends State<Onboarding> {
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Divider(
+  color: Colors.black, // Set the color of the divider
+  thickness: 2, // Set the thickness of the divider
+  height: 20, // Set the height of the divider
+),
                 Text(
-                  'everyone in-between',
+                  'Start exploring',
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold),
+                      fontSize: 12,
+                      fontWeight: FontWeight.w300),
                 ),
               ],
             ),
