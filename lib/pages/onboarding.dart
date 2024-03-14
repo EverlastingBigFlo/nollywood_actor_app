@@ -176,6 +176,7 @@ class _OnboardingState extends State<Onboarding> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
                     fixedSize: const Size(double.infinity, 60),
+                    minimumSize: Size(double.infinity, .1),
                     shape: RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.circular(8), // Set border radius
