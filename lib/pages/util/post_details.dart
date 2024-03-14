@@ -95,7 +95,8 @@ class _PostDetailsState extends State<PostDetails> {
           )
         ],
       ),
-      // bottomNavigationBar: BottomNavigationBar(items: items),
+      bottomNavigationBar: BottomNavigationBar(
+          items: const [BottomNavigationBarItem(icon: Icon(Icons.house))]),
     );
   }
 }
