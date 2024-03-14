@@ -29,6 +29,12 @@ class _PostDetailsState extends State<PostDetails> {
     return Scaffold(
       body: Stack(
         children: [
+          Container(
+            alignment: const Alignment(0, 0),
+            child: const Image(
+              image: AssetImage('lib/assets/For You Page.png'),
+            ),
+          ),
           // username and caption
           Padding(
             padding: const EdgeInsets.all(20.0),
@@ -48,15 +54,15 @@ class _PostDetailsState extends State<PostDetails> {
                   ),
                   Text(
                     widget.songTitle,
-                    style:
-                        TextStyle(fontSize: 13.59, fontWeight: FontWeight.w300),
+                    style: const TextStyle(
+                        fontSize: 13.59, fontWeight: FontWeight.w300),
                   ),
                   const SizedBox(
                     height: 5,
                   ),
                   Text(
                     widget.description,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 13.593, fontWeight: FontWeight.w400),
                   ),
                 ],
