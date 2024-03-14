@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:nollywood_actor_app/components/my_text..dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({Key? key}) : super(key: key);
@@ -100,10 +102,26 @@ class _OnboardingState extends State<Onboarding> {
                     ),
                   ),
                 ),
-              
               ],
             ),
           ),
+          Transform.translate(
+            offset: const Offset(0.0, -300.0),
+            child: const Column(
+              children: [
+                MyTexts(
+                    color: Colors.black,
+                    text: 'For actors, directors, and ',
+                    fontSize: 2,
+                    fontWeight: FontWeight.bold),
+                MyTexts(
+                    color: Colors.black,
+                    text: 'everyone in-between',
+                    fontSize: 2,
+                    fontWeight: FontWeight.bold)
+              ],
+            ),
+          )
         ],
       ),
     );
