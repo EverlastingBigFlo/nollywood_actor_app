@@ -95,7 +95,7 @@ class _PostDetailsState extends State<PostDetails> {
           )
         ],
       ),
+      // bottomNavigationBar: BottomNavigationBar(items: items),
     );
-    ;
   }
 }
