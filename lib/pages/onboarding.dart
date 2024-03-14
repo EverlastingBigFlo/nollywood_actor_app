@@ -38,11 +38,9 @@ class _OnboardingState extends State<Onboarding> {
                   // Nollywood logo
                   const Positioned(
                     top: 70,
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 30),
-                      child: Image(
-                        image: AssetImage('lib/assets/Group 39.png'),
-                      ),
+                    left: 30,
+                    child: Image(
+                      image: AssetImage('lib/assets/Group 39.png'),
                     ),
                   ),
 
@@ -107,9 +105,11 @@ class _OnboardingState extends State<Onboarding> {
             ),
           ),
           // headline section
-          const Center(
-            child: Positioned(
-              top: 230,
+          const Positioned(
+            bottom: 350,
+            left: 0,
+            right: 0,
+            child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -133,9 +133,11 @@ class _OnboardingState extends State<Onboarding> {
           ),
 
           // start explore
-          const Center(
-            child: Positioned(
-              bottom: 180,
+          const Positioned(
+            bottom: 280,
+            left: 0,
+            right: 0,
+            child: Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -171,9 +173,11 @@ class _OnboardingState extends State<Onboarding> {
           ),
 
           // buttons section
-          Center(
-            child: Positioned(
-              bottom: 20,
+          Positioned(
+            bottom: 100,
+            left: 0,
+            right: 0,
+            child: Center(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
