@@ -172,7 +172,9 @@ class _OnboardingState extends State<Onboarding> {
             child: Column(
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, 'mainscreen');
+                  },
                   style: ElevatedButton.styleFrom(
                     elevation: 0,
                     backgroundColor: Colors.black,
@@ -215,7 +217,7 @@ class _OnboardingState extends State<Onboarding> {
                     style: TextStyle(
                         fontSize: 16,
                         color: Colors.black,
-                        fontWeight: FontWeight.w200),
+                        fontWeight: FontWeight.w300),
                   ),
                 )
               ],

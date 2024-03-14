@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
       routes: {
         '/': (context) => const Splash(),
         'onboarding': (context) => const Onboarding(),
-        'mainScreen': (context) => const MainScreen(),
+        'mainscreen': (context) => const MainScreen(),
       },
     );
   }
