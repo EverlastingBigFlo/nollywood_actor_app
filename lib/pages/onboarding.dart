@@ -109,7 +109,7 @@ class _OnboardingState extends State<Onboarding> {
           // headline section
           const Center(
             child: Positioned(
-              bottom: 230,
+              top: 230,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
