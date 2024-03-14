@@ -33,6 +33,8 @@ class _OnboardingState extends State<Onboarding> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
+
+          // image sections
           Expanded(
             child: Stack(
               children: [
