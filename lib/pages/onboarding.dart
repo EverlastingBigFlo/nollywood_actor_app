@@ -109,7 +109,7 @@ class _OnboardingState extends State<Onboarding> {
           ),
           // headline section
           Transform.translate(
-            offset: const Offset(0.0, -280.0),
+            offset: const Offset(0.0, -240.0),
             child: const Column(
               children: [
                 Text(
@@ -132,7 +132,7 @@ class _OnboardingState extends State<Onboarding> {
 
           // start explore
           Transform.translate(
-            offset: const Offset(0.0, -240.0),
+            offset: const Offset(0.0, -200.0),
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -167,11 +167,23 @@ class _OnboardingState extends State<Onboarding> {
           ),
 
           // buttons section
-          Column(
-            children: [
-              ElevatedButton(
-                  onPressed: () {}, child: const Text('Explore as an actor'))
-            ],
+          Transform.translate(
+            offset: const Offset(0.0, -170.0),
+            child: Column(
+              children: [
+                ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('Explore as an actor'),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.black, // Background color
+                      shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(20), // Rounded corners
+                      ),
+                      padding: EdgeInsets.symmetric(vertical: 10),
+                    ))
+              ],
+            ),
           )
         ],
       ),
