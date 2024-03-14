@@ -164,58 +164,61 @@ class _OnboardingState extends State<Onboarding> {
           ),
 
           // buttons section
-          Column(
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, 'mainscreen');
-                },
-                style: ElevatedButton.styleFrom(
-                  elevation: 0,
-                  backgroundColor: Colors.black,
-                  fixedSize: const Size(double.infinity, 60),
-                  minimumSize: const Size(200, 60),
-                  maximumSize: const Size(370, 60),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
+          Positioned(
+            bottom: 200,
+            child: Column(
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, 'mainscreen');
+                  },
+                  style: ElevatedButton.styleFrom(
+                    elevation: 0,
+                    backgroundColor: Colors.black,
+                    fixedSize: const Size(double.infinity, 60),
+                    minimumSize: const Size(200, 60),
+                    maximumSize: const Size(370, 60),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  child: const Text(
+                    'Explore as an actor',
+                    style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
                   ),
                 ),
-                child: const Text(
-                  'Explore as an actor',
-                  style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold),
+                const SizedBox(
+                  height: 20,
                 ),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  elevation: 0,
-                  backgroundColor: Colors.white,
-                  fixedSize: const Size(double.infinity, 60),
-                  minimumSize: const Size(200, 60),
-                  maximumSize: const Size(370, 60),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  side: const BorderSide(
-                    color: Colors.black, // Set the outline color
-                    width: 1, // Set the outline width
-                  ),
-                ),
-                child: const Text(
-                  'Explore as a producer',
-                  style: TextStyle(
-                      fontSize: 16,
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    elevation: 0,
+                    backgroundColor: Colors.white,
+                    fixedSize: const Size(double.infinity, 60),
+                    minimumSize: const Size(200, 60),
+                    maximumSize: const Size(370, 60),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    side: const BorderSide(
                       color: Colors.black,
-                      fontWeight: FontWeight.w300),
-                ),
-              )
-            ],
+                      width: 1,
+                    ),
+                  ),
+                  child: const Text(
+                    'Explore as a producer',
+                    style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w300),
+                  ),
+                )
+              ],
+            ),
           )
         ],
       ),
