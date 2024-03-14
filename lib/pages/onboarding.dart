@@ -205,6 +205,10 @@ class _OnboardingState extends State<Onboarding> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
+                    side: const BorderSide(
+                      color: Colors.black, // Set the outline color
+                      width: 1, // Set the outline width
+                    ),
                   ),
                   child: const Text(
                     'Explore as a producer',
