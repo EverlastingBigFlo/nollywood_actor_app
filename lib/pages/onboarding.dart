@@ -174,6 +174,7 @@ class _OnboardingState extends State<Onboarding> {
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
+                    elevation: 0,
                     backgroundColor: Colors.black,
                     fixedSize: const Size(double.infinity, 60),
                     minimumSize: const Size(200, 60),
@@ -196,6 +197,7 @@ class _OnboardingState extends State<Onboarding> {
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
+                    elevation: 0,
                     backgroundColor: Colors.white,
                     fixedSize: const Size(double.infinity, 60),
                     minimumSize: const Size(200, 60),
