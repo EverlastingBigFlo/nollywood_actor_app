@@ -137,10 +137,10 @@ class _OnboardingState extends State<Onboarding> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Divider(
-  color: Colors.black, // Set the color of the divider
-  thickness: 2, // Set the thickness of the divider
-  height: 20, // Set the height of the divider
-),
+                  color: Colors.black,
+                  thickness: 2,
+                  height: 200,
+                ),
                 Text(
                   'Start exploring',
                   style: TextStyle(
