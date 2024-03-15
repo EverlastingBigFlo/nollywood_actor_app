@@ -21,7 +21,7 @@ class _MainScreenState extends State<MainScreen> {
       numbersOfComment: '25',
       numbersOfShare: '12',
       home: 'lib/icons/Vector copy 2.png',
-      business: 'lib/icons/suitcase.png',
+      business: 'lib/icons/Vector copy 3.png',
       // add: 'lib/icons/home.png',
       chat: 'lib/icons/Vector copy.png',
       profile: 'lib/icons/home.png',
