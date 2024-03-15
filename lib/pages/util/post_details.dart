@@ -33,6 +33,8 @@ class _PostDetailsState extends State<PostDetails> {
             alignment: const Alignment(0, 0),
             child: Image(
               image: AssetImage(widget.userPost),
+              fit: BoxFit.cover,
+              height: 850,
             ),
           ),
           // username and caption
