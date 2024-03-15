@@ -13,7 +13,6 @@ class PostDetails extends StatefulWidget {
   final userPost;
   final home;
   final business;
-  final add;
   final chat;
   final profile;
 
@@ -27,7 +26,9 @@ class PostDetails extends StatefulWidget {
     required this.numbersOfShare,
     this.userPost,
     this.home,
-    this.business, this.add, this.chat, this.profile,
+    this.business,
+    this.chat,
+    this.profile,
   });
 
   @override
@@ -120,7 +121,7 @@ class _PostDetailsState extends State<PostDetails> {
           BottomNavigationBarItem(icon: Image.asset(widget.home), label: ''),
           BottomNavigationBarItem(
               icon: Image.asset(widget.business), label: ''),
-          BottomNavigationBarItem(icon: Image.asset(widget.add), label: ''),
+          const BottomNavigationBarItem(icon: Icon(Icons.add), label: ''),
           BottomNavigationBarItem(icon: Image.asset(widget.chat), label: ''),
           BottomNavigationBarItem(icon: Image.asset(widget.profile), label: ''),
         ],

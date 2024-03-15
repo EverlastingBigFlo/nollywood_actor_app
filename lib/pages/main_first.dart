@@ -22,7 +22,7 @@ class _MainScreenState extends State<MainScreen> {
       numbersOfShare: '12',
       home: 'lib/icons/home.png',
       business: 'lib/icons/business.png',
-      add: 'lib/icons/home.png',
+      // add: 'lib/icons/home.png',
       chat: 'lib/icons/chat.png',
       profile: 'lib/icons/home.png',
     );
