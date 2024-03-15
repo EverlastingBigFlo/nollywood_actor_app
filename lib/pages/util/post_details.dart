@@ -214,10 +214,8 @@ class _PostDetailsState extends State<PostDetails> {
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
-                icon: Container(
-                  child: Image.asset(
-                    widget.home,
-                  ),
+                icon: Image.asset(
+                  widget.home,
                 ),
                 label: ''),
             BottomNavigationBarItem(
