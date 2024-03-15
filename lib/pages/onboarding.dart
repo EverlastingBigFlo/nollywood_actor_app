@@ -57,7 +57,7 @@ class _OnboardingState extends State<Onboarding> {
                         Row(
                           children: myFirstActors.map((path) {
                             return Padding(
-                              padding: const EdgeInsets.all(12),
+                              padding: const EdgeInsets.all(8),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: Image(
@@ -85,7 +85,7 @@ class _OnboardingState extends State<Onboarding> {
                         Row(
                           children: mySecondActors.map((path) {
                             return Padding(
-                              padding: const EdgeInsets.all(12),
+                              padding: const EdgeInsets.all(8),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: Image(
