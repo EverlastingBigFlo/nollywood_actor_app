@@ -63,12 +63,12 @@ class _PostDetailsState extends State<PostDetails> {
             child: Image(
               image: AssetImage(widget.userPost),
               fit: BoxFit.cover,
-              height: 850,
+              width: 850,
             ),
           ),
           // username and description
           Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(18.0),
             child: Container(
               alignment: const Alignment(-1, 1),
               child: Column(
@@ -102,6 +102,26 @@ class _PostDetailsState extends State<PostDetails> {
                         fontSize: 13.593,
                         fontWeight: FontWeight.w500),
                   ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  // progress bar section
+                  FractionallySizedBox(
+                    alignment: Alignment.bottomCenter,
+                    widthFactor: 1.0,
+                    child: SizedBox(
+                      height: 3.0,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(10.0),
+                        child: LinearProgressIndicator(
+                          value: 0.4,
+                          backgroundColor: Colors.grey[400],
+                          valueColor:
+                              const AlwaysStoppedAnimation(Colors.white),
+                        ),
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
@@ -168,8 +188,6 @@ class _PostDetailsState extends State<PostDetails> {
               ),
             ),
           ),
-
-        
         ],
       ),
       // bottom navigation
