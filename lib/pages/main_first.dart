@@ -22,7 +22,7 @@ class _MainScreenState extends State<MainScreen> {
 
       //side icons and numbers
       numbersOfLikes: '256',
-      comment: '',
+      comment: 'lib/icons/Vector.png',
       numbersOfComment: '25',
       numbersOfShare: '12',
 
