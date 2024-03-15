@@ -56,14 +56,17 @@ class _OnboardingState extends State<Onboarding> {
                       children: [
                         Row(
                           children: myFirstActors.map((path) {
-                            return Padding(
-                              padding: const EdgeInsets.all(7),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                child: Image(
-                                  image: AssetImage(path),
-                                  height: 135,
-                                  fit: BoxFit.cover,
+                            return Align(
+                              alignment: Alignment.center,
+                              child: Padding(
+                                padding: const EdgeInsets.all(7),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(10),
+                                  child: Image(
+                                    image: AssetImage(path),
+                                    height: 135,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             );
@@ -86,10 +89,10 @@ class _OnboardingState extends State<Onboarding> {
                       children: [
                         Row(
                           children: mySecondActors.map((path) {
-                            return Padding(
-                              padding: const EdgeInsets.all(7),
-                              child: Align(
-                                alignment: Alignment.center,
+                            return Align(
+                              alignment: Alignment.center,
+                              child: Padding(
+                                padding: const EdgeInsets.all(7),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                   child: Image(
