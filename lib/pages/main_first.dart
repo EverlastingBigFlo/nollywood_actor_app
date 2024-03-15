@@ -15,6 +15,7 @@ class _MainScreenState extends State<MainScreen> {
     return const PostDetails(
       //background image
       userPost: 'lib/assets/For You Page.png',
+
       // username and description
       username: 'AdesuaEtomi',
       songTitle: 'The Seagull (Anton Chekhov)',
@@ -25,6 +26,7 @@ class _MainScreenState extends State<MainScreen> {
       numbersOfLikes: '256',
       comment: 'lib/icons/Vector.png',
       numbersOfComment: '25',
+      share: 'lib/icons/share.png',
       numbersOfShare: '12',
 
       // bottomnavigator navbar

@@ -115,13 +115,19 @@ class _PostDetailsState extends State<PostDetails> {
                 children: [
                   // MyButton(icon: Icons.favorite, number: widget.numbersOfLikes),
                   MyButton(
-                      icon: Image.asset(widget.likes),
+                      icon: Image.asset(
+                        widget.likes,
+                      ),
                       number: widget.numbersOfLikes),
                   MyButton(
                       icon: Image.asset(widget.comment),
                       number: widget.numbersOfComment),
                   MyButton(
-                      icon: Image.asset(widget.comment),
+                      icon: Image.asset(
+                        widget.share,
+                        color: Colors.white,
+                        height: 35,
+                      ),
                       number: widget.numbersOfShare),
                 ],
               ),
