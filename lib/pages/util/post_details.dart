@@ -66,6 +66,7 @@ class _PostDetailsState extends State<PostDetails> {
               width: 850,
             ),
           ),
+
           // username and description
           Padding(
             padding: const EdgeInsets.all(18.0),
