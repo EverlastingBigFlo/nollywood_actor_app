@@ -167,8 +167,9 @@ class _PostDetailsState extends State<PostDetails> {
               ),
             ),
           ),
-          // progress bar section
 
+          
+          // progress bar section
           Center(
             child: Container(
               width: 200,
