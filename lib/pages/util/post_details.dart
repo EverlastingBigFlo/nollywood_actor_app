@@ -65,7 +65,7 @@ class _PostDetailsState extends State<PostDetails> {
               height: 850,
             ),
           ),
-          // username and
+          // username and description
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: Container(
@@ -169,40 +169,44 @@ class _PostDetailsState extends State<PostDetails> {
           )
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(
-              icon: Image.asset(
-                widget.home,
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.only(top: 8.0),
+        child: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+                icon: Image.asset(
+                  widget.home,
+                ),
+                label: ''),
+            BottomNavigationBarItem(
+                icon: Image.asset(widget.business), label: ''),
+            BottomNavigationBarItem(
+              icon: Container(
+                decoration: BoxDecoration(
+                  color: const Color(0xFFEB545D),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 4.5, horizontal: 5),
+                child: Icon(
+                  widget.add,
+                  color: Colors.white,
+                  size: 30,
+                ),
               ),
-              label: ''),
-          BottomNavigationBarItem(
-              icon: Image.asset(widget.business), label: ''),
-          BottomNavigationBarItem(
-            icon: Container(
-              decoration: BoxDecoration(
-                color: const Color(0xFFEB545D),
-                borderRadius: BorderRadius.circular(4),
-              ),
-              padding: const EdgeInsets.symmetric(vertical: 4.5, horizontal: 5),
-              child: Icon(
-                widget.add,
-                color: Colors.white,
-                size: 30,
-              ),
+              label: '',
             ),
-            label: '',
-          ),
-          BottomNavigationBarItem(icon: Image.asset(widget.chat), label: ''),
-          BottomNavigationBarItem(
-              icon: Icon(
-                widget.profile,
-                size: 35,
-                color: Colors.grey,
-              ),
-              label: ''),
-        ],
+            BottomNavigationBarItem(icon: Image.asset(widget.chat), label: ''),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  widget.profile,
+                  size: 35,
+                  color: Colors.grey,
+                ),
+                label: ''),
+          ],
+        ),
       ),
     );
   }
