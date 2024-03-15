@@ -35,18 +35,12 @@ class _SplashState extends State<Splash> {
           Align(
               alignment: Alignment.bottomCenter,
               child: Padding(
-                padding: EdgeInsets.only(bottom: 60),
+                padding: EdgeInsets.only(bottom: 70),
                 child: CupertinoActivityIndicator(
                   radius: 25,
                   color: Colors.white,
                 ),
               )),
-          // Align(
-          //   alignment: Alignment.bottomCenter,
-          //   child: Padding(
-          //       padding: EdgeInsets.only(bottom: 60),
-          //       child: Image(image: AssetImage('lib/assets/loader.png'))),
-          // ),
         ],
       ),
     );
