@@ -4,35 +4,46 @@ import 'package:flutter/material.dart';
 import 'package:nollywood_actor_app/pages/util/button.dart';
 
 class PostDetails extends StatefulWidget {
+  // username and description
   final String username;
   final String songTitle;
   final String description;
+
+// side icons and numbers
+  final likes;
   final String numbersOfLikes;
   final comment;
   final String numbersOfComment;
+
+  final share;
   final String numbersOfShare;
-  final userPost;
+
+  // bottomnavigator navbar
   final home;
   final business;
   final chat;
   final profile;
   final add;
 
+// background image
+  final userPost;
   const PostDetails({
     super.key,
     required this.username,
     required this.songTitle,
     required this.description,
     required this.numbersOfLikes,
+    required this.comment,
     required this.numbersOfComment,
+    this.share,
     required this.numbersOfShare,
-    this.userPost,
     this.home,
     this.business,
     this.chat,
     this.profile,
     this.add,
-    required this.comment,
+    this.likes,
+    this.userPost,
   });
 
   @override
@@ -104,16 +115,14 @@ class _PostDetailsState extends State<PostDetails> {
                 children: [
                   // MyButton(icon: Icons.favorite, number: widget.numbersOfLikes),
                   MyButton(
-                      // icon: Image.asset(widget.comment),
+                      icon: Image.asset(widget.likes),
+                      number: widget.numbersOfLikes),
+                  MyButton(
                       icon: Image.asset(widget.comment),
-                      number:
-                          // '25'
-                          widget.numbersOfComment),
-                  // MyButton(
-                  //     icon: Icons.share,
-                  //     number:
-                  //         // '12'
-                  //         widget.numbersOfShare),
+                      number: widget.numbersOfComment),
+                  MyButton(
+                      icon: Image.asset(widget.comment),
+                      number: widget.numbersOfShare),
                 ],
               ),
             ),
