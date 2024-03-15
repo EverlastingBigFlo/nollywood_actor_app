@@ -127,8 +127,8 @@ class _PostDetailsState extends State<PostDetails> {
 
           BottomNavigationBarItem(
             icon: Container(
-              color: Colors.red, // Set the background color to red
-              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              color: const Color(0xFFEB545D), // Set the background color to red
+              padding: const EdgeInsets.symmetric(vertical: 4.5, horizontal: 5),
               child: Icon(widget.add),
             ),
             label: '',
