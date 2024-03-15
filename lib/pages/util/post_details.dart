@@ -118,14 +118,15 @@ class _PostDetailsState extends State<PostDetails> {
                   Stack(
                     children: [
                       CircleAvatar(
-                        radius: 25,
+                        radius: 20,
                         backgroundImage: AssetImage(widget.addFriend),
                       ),
                       Positioned(
-                        bottom: 0,
+                        bottom: -10,
                         right: 0,
+                        left: 0,
                         child: Container(
-                          padding: const EdgeInsets.all(4),
+                          padding: const EdgeInsets.all(0.1),
                           decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.red,
