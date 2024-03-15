@@ -179,9 +179,10 @@ class _PostDetailsState extends State<PostDetails> {
               ),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10.0),
-                child: LinearProgressIndicator(
+                child: const LinearProgressIndicator(
                   value: 0.7,
-  
+                  backgroundColor: Colors.grey,
+                  valueColor: AlwaysStoppedAnimation(Colors.white),
                 ),
               ),
             ),
