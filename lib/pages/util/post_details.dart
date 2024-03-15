@@ -169,7 +169,23 @@ class _PostDetailsState extends State<PostDetails> {
           ),
           // progress bar section
 
-          
+          Center(
+            child: Container(
+              width: 200,
+              height: 20.0,
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.white),
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10.0),
+                child: LinearProgressIndicator(
+                  value: 0.7,
+  
+                ),
+              ),
+            ),
+          )
         ],
       ),
       // bottom navigation
