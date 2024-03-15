@@ -194,15 +194,17 @@ class _PostDetailsState extends State<PostDetails> {
               ),
             ),
           ),
-          Align(
-            alignment: Alignment.bottomLeft,
-            child: Positioned(
+          Positioned(
+              bottom: -1,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10.0),
                 child: Container(
-              height: 10,
-              width: 00,
-              color: Colors.black,
-            )),
-          )
+                  clipBehavior: Clip.none,
+                  height: 5,
+                  width: 60,
+                  color: Colors.black,
+                ),
+              ))
         ],
       ),
       // bottom navigation
