@@ -12,12 +12,14 @@ class Splash extends StatefulWidget {
 
 class _SplashState extends State<Splash> {
   @override
+  //to dismiss the first splash page after 5 seconds
   void initState() {
     super.initState();
     Future.delayed(const Duration(milliseconds: 5000),
         () => {Navigator.pushNamed(context, 'onboarding')});
   }
 
+  @override
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.black,
