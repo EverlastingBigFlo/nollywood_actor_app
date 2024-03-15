@@ -166,10 +166,12 @@ class _PostDetailsState extends State<PostDetails> {
                 ],
               ),
             ),
-          )
+          ),
+          // progress bar section
+
+          
         ],
       ),
-
       // bottom navigation
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(top: 1.0),
