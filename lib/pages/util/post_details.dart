@@ -31,7 +31,8 @@ class PostDetails extends StatefulWidget {
     this.business,
     this.chat,
     this.profile,
-    this.add, required this.comment,
+    this.add,
+    required this.comment,
   });
 
   @override
@@ -103,6 +104,7 @@ class _PostDetailsState extends State<PostDetails> {
                 children: [
                   MyButton(icon: Icons.favorite, number: widget.numbersOfLikes),
                   MyButton(
+                      // icon: Image.asset(widget.comment),
                       icon: Image.asset(widget.comment),
                       number:
                           // '25'
