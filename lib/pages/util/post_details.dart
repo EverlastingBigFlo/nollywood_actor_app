@@ -169,13 +169,14 @@ class _PostDetailsState extends State<PostDetails> {
           )
         ],
       ),
+
+      // bottom navigation
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(top: 1.0),
         child: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
-              
                 icon: Container(
                   child: Image.asset(
                     widget.home,
