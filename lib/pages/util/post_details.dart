@@ -12,6 +12,10 @@ class PostDetails extends StatefulWidget {
   final String numbersOfShare;
   final userPost;
   final home;
+  final business;
+  final add;
+  final chat;
+  final profile;
 
   const PostDetails({
     super.key,
@@ -23,6 +27,7 @@ class PostDetails extends StatefulWidget {
     required this.numbersOfShare,
     this.userPost,
     this.home,
+    this.business, this.add, this.chat, this.profile,
   });
 
   @override
@@ -113,7 +118,11 @@ class _PostDetailsState extends State<PostDetails> {
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Image.asset(widget.home), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+          BottomNavigationBarItem(
+              icon: Image.asset(widget.business), label: ''),
+          BottomNavigationBarItem(icon: Image.asset(widget.add), label: ''),
+          BottomNavigationBarItem(icon: Image.asset(widget.chat), label: ''),
+          BottomNavigationBarItem(icon: Image.asset(widget.profile), label: ''),
         ],
       ),
     );

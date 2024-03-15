@@ -21,6 +21,10 @@ class _MainScreenState extends State<MainScreen> {
       numbersOfComment: '25',
       numbersOfShare: '12',
       home: 'lib/icons/inactive.png',
+      business: 'lib/icons/inactive.png',
+      add: 'lib/icons/inactive.png',
+      chat: 'lib/icons/inactive.png',
+      profile: 'lib/icons/inactive.png',
     );
   }
 }
