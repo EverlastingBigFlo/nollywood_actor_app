@@ -22,7 +22,6 @@ class MyButton extends StatelessWidget {
             number,
             style: TextStyle(color: numberColor ?? Colors.white),
           ),
-          const SizedBox(height: 15),
         ],
       ),
     );
