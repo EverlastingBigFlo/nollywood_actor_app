@@ -90,6 +90,8 @@ class _OnboardingState extends State<Onboarding> {
                                 borderRadius: BorderRadius.circular(10),
                                 child: Image(
                                   image: AssetImage(path),
+                                  fit: BoxFit.contain,
+                                  height: 130,
                                 ),
                               ),
                             );
