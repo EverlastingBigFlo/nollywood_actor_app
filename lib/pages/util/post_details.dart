@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:nollywood_actor_app/pages/util/button.dart';
@@ -193,11 +194,15 @@ class _PostDetailsState extends State<PostDetails> {
               ),
             ),
           ),
-          Positioned(child: Container(
-            height: 10,
-            width: 20,
-
-          ))
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: Positioned(
+                child: Container(
+              height: 10,
+              width: 00,
+              color: Colors.black,
+            )),
+          )
         ],
       ),
       // bottom navigation
