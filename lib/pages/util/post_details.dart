@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 import 'package:nollywood_actor_app/pages/util/button.dart';
 
@@ -9,21 +11,17 @@ class PostDetails extends StatefulWidget {
   final String numbersOfComment;
   final String numbersOfShare;
   final userPost;
-  final home;
-  final business;
-  final add;
-  final chat;
-  final profile;
 
-  const PostDetails(
-      {super.key,
-      required this.username,
-      required this.songTitle,
-      required this.description,
-      required this.numbersOfLikes,
-      required this.numbersOfComment,
-      required this.numbersOfShare,
-      this.userPost, this.home, this.business, this.add, this.chat, this.profile});
+  const PostDetails({
+    super.key,
+    required this.username,
+    required this.songTitle,
+    required this.description,
+    required this.numbersOfLikes,
+    required this.numbersOfComment,
+    required this.numbersOfShare,
+    this.userPost,
+  });
 
   @override
   State<PostDetails> createState() => _PostDetailsState();
@@ -111,9 +109,10 @@ class _PostDetailsState extends State<PostDetails> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+        items: [
+          BottomNavigationBarItem(
+              icon: Image.asset('lib/icons/inactive.png'), label: 'Home'),
+          // BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
         ],
       ),
     );
