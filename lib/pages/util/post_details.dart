@@ -120,7 +120,11 @@ class _PostDetailsState extends State<PostDetails> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(icon: Image.asset(widget.home), label: ''),
+          BottomNavigationBarItem(
+              icon: Image.asset(
+                widget.home,
+              ),
+              label: ''),
           BottomNavigationBarItem(
               icon: Image.asset(widget.business), label: ''),
           BottomNavigationBarItem(
@@ -139,7 +143,13 @@ class _PostDetailsState extends State<PostDetails> {
             label: '',
           ),
           BottomNavigationBarItem(icon: Image.asset(widget.chat), label: ''),
-          BottomNavigationBarItem(icon: Icon(widget.profile), label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(
+                widget.profile,
+                size: 35,
+                color: Colors.grey,
+              ),
+              label: ''),
         ],
       ),
     );
