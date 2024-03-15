@@ -64,7 +64,7 @@ class _PostDetailsState extends State<PostDetails> {
                 child: Image(
                   image: AssetImage(widget.userPost),
                   fit: BoxFit.cover,
-                  height: 850,
+                  height: 500,
                 ),
               ),
               // username and description
@@ -169,25 +169,24 @@ class _PostDetailsState extends State<PostDetails> {
                   ),
                 ),
               ),
-
-              // progress bar section
-              FractionallySizedBox(
-                alignment: Alignment.bottomCenter,
-                widthFactor: 1.0,
-                child: SizedBox(
-                  height: 3.0,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(10.0),
-                    child: LinearProgressIndicator(
-                      value: 0.3,
-                      backgroundColor: Colors.grey[400],
-                      valueColor: const AlwaysStoppedAnimation(Colors.white),
-                    ),
-                  ),
-                ),
-              )
             ],
           ),
+          // progress bar section
+          FractionallySizedBox(
+            alignment: Alignment.bottomCenter,
+            widthFactor: 1.0,
+            child: SizedBox(
+              height: 3.0,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10.0),
+                child: LinearProgressIndicator(
+                  value: 0.3,
+                  backgroundColor: Colors.grey[400],
+                  valueColor: const AlwaysStoppedAnimation(Colors.white),
+                ),
+              ),
+            ),
+          )
         ],
       ),
       // bottom navigation
