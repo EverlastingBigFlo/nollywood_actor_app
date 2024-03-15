@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 class MyButton extends StatelessWidget {
   final Widget icon;
   final String number;
+  final Color? numberColor;
 
-  const MyButton({super.key, required this.icon, required this.number});
+  const MyButton(
+      {super.key, required this.icon, required this.number, this.numberColor});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +18,10 @@ class MyButton extends StatelessWidget {
             icon: icon is IconData ? Icon(icon as IconData) : icon as Widget,
             onPressed: () {},
           ),
-          Text(number),
+          Text(
+            number,
+            style: TextStyle(color: numberColor ?? Colors.white),
+          ),
           SizedBox(height: 25),
         ],
       ),
