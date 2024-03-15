@@ -172,18 +172,14 @@ class _PostDetailsState extends State<PostDetails> {
           Center(
             child: FractionallySizedBox(
               widthFactor: 1.0,
-              child: Container(
-                height: 5.0,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
+              child: SizedBox(
+                height: 3.0,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10.0),
-                  child: const LinearProgressIndicator(
-                    value: 0.7,
-                    backgroundColor: Colors.grey,
-                    valueColor: AlwaysStoppedAnimation(Colors.white),
+                  child: LinearProgressIndicator(
+                    value: 0.3,
+                    backgroundColor: Colors.grey[400],
+                    valueColor: const AlwaysStoppedAnimation(Colors.white),
                   ),
                 ),
               ),
