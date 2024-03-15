@@ -168,22 +168,23 @@ class _PostDetailsState extends State<PostDetails> {
             ),
           ),
 
-          
           // progress bar section
           Center(
-            child: Container(
-              width: 200,
-              height: 20.0,
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.white),
-                borderRadius: BorderRadius.circular(10.0),
-              ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10.0),
-                child: const LinearProgressIndicator(
-                  value: 0.7,
-                  backgroundColor: Colors.grey,
-                  valueColor: AlwaysStoppedAnimation(Colors.white),
+            child: FractionallySizedBox(
+              widthFactor: 1.0,
+              child: Container(
+                height: 5.0,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white),
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10.0),
+                  child: const LinearProgressIndicator(
+                    value: 0.7,
+                    backgroundColor: Colors.grey,
+                    valueColor: AlwaysStoppedAnimation(Colors.white),
+                  ),
                 ),
               ),
             ),
