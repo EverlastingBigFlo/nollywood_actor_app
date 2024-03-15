@@ -116,31 +116,34 @@ class _PostDetailsState extends State<PostDetails> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Stack(
-                    clipBehavior: Clip.none,
-                    children: [
-                      CircleAvatar(
-                        radius: 20,
-                        backgroundImage: AssetImage(widget.addFriend),
-                      ),
-                      Positioned(
-                        bottom: -10,
-                        right: 0,
-                        left: 0,
-                        child: Container(
-                          padding: const EdgeInsets.all(0.1),
-                          decoration: const BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.red,
-                          ),
-                          child: const Icon(
-                            Icons.add,
-                            color: Colors.white,
-                            size: 20,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Stack(
+                      clipBehavior: Clip.none,
+                      children: [
+                        CircleAvatar(
+                          radius: 20,
+                          backgroundImage: AssetImage(widget.addFriend),
+                        ),
+                        Positioned(
+                          bottom: -10,
+                          right: 0,
+                          left: 0,
+                          child: Container(
+                            padding: const EdgeInsets.all(0.1),
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.red,
+                            ),
+                            child: const Icon(
+                              Icons.add,
+                              color: Colors.white,
+                              size: 20,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   MyButton(
                     icon: Image.asset(
