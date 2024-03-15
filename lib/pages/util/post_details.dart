@@ -15,6 +15,7 @@ class PostDetails extends StatefulWidget {
   final business;
   final chat;
   final profile;
+  final add;
 
   const PostDetails({
     super.key,
@@ -29,6 +30,7 @@ class PostDetails extends StatefulWidget {
     this.business,
     this.chat,
     this.profile,
+    this.add,
   });
 
   @override
@@ -119,10 +121,11 @@ class _PostDetailsState extends State<PostDetails> {
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Image.asset(widget.home), label: ''),
-          BottomNavigationBarItem(icon: Image.asset(widget.business), label: ''),
-          const BottomNavigationBarItem(icon: Icon(Icons.add), label: ''),
+          BottomNavigationBarItem(
+              icon: Image.asset(widget.business), label: ''),
+          BottomNavigationBarItem(icon: Icon(widget.add), label: ''),
           BottomNavigationBarItem(icon: Image.asset(widget.chat), label: ''),
-          BottomNavigationBarItem(icon: Image.asset(widget.profile), label: ''),
+          BottomNavigationBarItem(icon: Icon(widget.profile), label: ''),
         ],
       ),
     );

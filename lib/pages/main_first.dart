@@ -13,18 +13,24 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return const PostDetails(
+      //background image
       userPost: 'lib/assets/For You Page.png',
+      // username and description
       username: 'AdesuaEtomi',
       songTitle: 'The Seagull (Anton Chekhov)',
       description: '#hollywood-english',
+
+      //side icons and numbers
       numbersOfLikes: '256',
       numbersOfComment: '25',
       numbersOfShare: '12',
+
+      // bottomnavigator navbar
       home: 'lib/icons/Vector copy 2.png',
       business: 'lib/icons/Vector copy 3.png',
-      // add: 'lib/icons/home.png',
+      add: Icons.add,
       chat: 'lib/icons/Vector copy.png',
-      profile: 'lib/icons/home.png',
+      profile: Icons.person,
     );
   }
 }
