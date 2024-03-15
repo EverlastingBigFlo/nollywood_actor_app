@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 // import 'package:shared_preferences/shared_preferences.dart';
 
 class Splash extends StatefulWidget {
@@ -31,13 +32,21 @@ class _SplashState extends State<Splash> {
             ),
           ),
           // loader section
-          CupertinoActivityIndicator(),
           Align(
-            alignment: Alignment.bottomCenter,
-            child: Padding(
+              alignment: Alignment.bottomCenter,
+              child: Padding(
                 padding: EdgeInsets.only(bottom: 60),
-                child: Image(image: AssetImage('lib/assets/loader.png'))),
-          ),
+                child: CupertinoActivityIndicator(
+                  radius: 25,
+                  color: Colors.white,
+                ),
+              )),
+          // Align(
+          //   alignment: Alignment.bottomCenter,
+          //   child: Padding(
+          //       padding: EdgeInsets.only(bottom: 60),
+          //       child: Image(image: AssetImage('lib/assets/loader.png'))),
+          // ),
         ],
       ),
     );
