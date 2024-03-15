@@ -131,7 +131,7 @@ class _PostDetailsState extends State<PostDetails> {
           // side icons and numbers
 
           Padding(
-            padding: const EdgeInsets.only(right: 5),
+            padding: const EdgeInsets.fromLTRB(0, 0, 5, 10),
             child: Container(
               alignment: Alignment.bottomRight,
               child: Column(
@@ -167,24 +167,28 @@ class _PostDetailsState extends State<PostDetails> {
                       ],
                     ),
                   ),
-                  MyButton(
-                    icon: Image.asset(
-                      widget.likes,
-                    ),
-                    number: widget.numbersOfLikes,
-                  ),
-                  MyButton(
-                    icon: Image.asset(widget.comment),
-                    number: widget.numbersOfComment,
-                  ),
-                  MyButton(
-                    icon: Image.asset(
-                      widget.share,
-                      color: Colors.white,
-                      height: 35,
-                    ),
-                    number: widget.numbersOfShare,
-                  ),
+                  Column(
+                    children: [
+                      MyButton(
+                        icon: Image.asset(
+                          widget.likes,
+                        ),
+                        number: widget.numbersOfLikes,
+                      ),
+                      MyButton(
+                        icon: Image.asset(widget.comment),
+                        number: widget.numbersOfComment,
+                      ),
+                      MyButton(
+                        icon: Image.asset(
+                          widget.share,
+                          color: Colors.white,
+                          height: 35,
+                        ),
+                        number: widget.numbersOfShare,
+                      ),
+                    ],
+                  )
                 ],
               ),
             ),
