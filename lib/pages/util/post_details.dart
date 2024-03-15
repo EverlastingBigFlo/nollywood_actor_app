@@ -126,11 +126,11 @@ class _PostDetailsState extends State<PostDetails> {
                           backgroundImage: AssetImage(widget.addFriend),
                         ),
                         Positioned(
-                          bottom: -10,
+                          bottom: -15,
                           right: 0,
                           left: 0,
                           child: Container(
-                            padding: const EdgeInsets.all(0.1),
+                            padding: const EdgeInsets.all(2),
                             decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                               color: Colors.red,
