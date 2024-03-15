@@ -8,7 +8,7 @@ class PostDetails extends StatefulWidget {
   final String songTitle;
   final String description;
   final String numbersOfLikes;
-  final String comment;
+  final comment;
   final String numbersOfComment;
   final String numbersOfShare;
   final userPost;
