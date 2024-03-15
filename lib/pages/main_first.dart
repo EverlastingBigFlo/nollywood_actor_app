@@ -23,7 +23,7 @@ class _MainScreenState extends State<MainScreen> {
       home: 'lib/icons/home.png',
       business: 'lib/icons/business.png',
       // add: 'lib/icons/home.png',
-      chat: 'lib/icons/chat.png',
+      chat: 'lib/icons/Vector copy.png',
       profile: 'lib/icons/home.png',
     );
   }

@@ -122,7 +122,6 @@ class _PostDetailsState extends State<PostDetails> {
           BottomNavigationBarItem(
               icon: Image.asset(widget.business), label: ''),
           const BottomNavigationBarItem(icon: Icon(Icons.add), label: ''),
-          const BottomNavigationBarItem(icon: Icon(Icons.chat), label: ''),
           BottomNavigationBarItem(icon: Image.asset(widget.chat), label: ''),
           BottomNavigationBarItem(icon: Image.asset(widget.profile), label: ''),
         ],
