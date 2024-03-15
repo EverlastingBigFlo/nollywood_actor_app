@@ -8,6 +8,7 @@ class PostDetails extends StatefulWidget {
   final String songTitle;
   final String description;
   final String numbersOfLikes;
+  final String comment;
   final String numbersOfComment;
   final String numbersOfShare;
   final userPost;
@@ -30,7 +31,7 @@ class PostDetails extends StatefulWidget {
     this.business,
     this.chat,
     this.profile,
-    this.add,
+    this.add, required this.comment,
   });
 
   @override
@@ -102,7 +103,7 @@ class _PostDetailsState extends State<PostDetails> {
                 children: [
                   MyButton(icon: Icons.favorite, number: widget.numbersOfLikes),
                   MyButton(
-                      icon: Icons.chat,
+                      icon: Image.asset(widget.comment),
                       number:
                           // '25'
                           widget.numbersOfComment),
