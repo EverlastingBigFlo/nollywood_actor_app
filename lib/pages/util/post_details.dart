@@ -10,11 +10,11 @@ class PostDetails extends StatefulWidget {
   final String description;
 
 // side icons and numbers
+  final addFriend;
   final likes;
   final String numbersOfLikes;
   final comment;
   final String numbersOfComment;
-
   final share;
   final String numbersOfShare;
 
@@ -44,6 +44,7 @@ class PostDetails extends StatefulWidget {
     this.add,
     this.likes,
     this.userPost,
+    this.addFriend,
   });
 
   @override
@@ -64,7 +65,7 @@ class _PostDetailsState extends State<PostDetails> {
               height: 850,
             ),
           ),
-          // username and caption
+          // username and
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: Container(
@@ -105,7 +106,8 @@ class _PostDetailsState extends State<PostDetails> {
             ),
           ),
 
-          //Buttons
+          // side icons and numbers
+
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: Container(
@@ -113,6 +115,15 @@ class _PostDetailsState extends State<PostDetails> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
+                  CircleAvatar(
+                    radius: 50,
+                    child: MyButton(
+                      icon: Image.asset(
+                        widget.addFriend,
+                      ),
+                      number: widget.numbersOfLikes,
+                    ),
+                  ),
                   MyButton(
                     icon: Image.asset(
                       widget.likes,

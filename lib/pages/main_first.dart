@@ -22,6 +22,7 @@ class _MainScreenState extends State<MainScreen> {
       description: '#hollywood-english',
 
       //side icons and numbers
+      addFriend: 'lib/assets/adesua.png',
       likes: 'lib/icons/Group 37472.png',
       numbersOfLikes: '256',
       comment: 'lib/icons/Vector.png',
