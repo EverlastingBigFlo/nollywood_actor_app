@@ -109,13 +109,15 @@ class _PostDetailsState extends State<PostDetails> {
           // side icons and numbers
 
           Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.only(right: 10),
             child: Container(
-              alignment: const Alignment(1, 1),
+              alignment: Alignment.bottomRight,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Stack(
+                    clipBehavior: Clip.none,
                     children: [
                       CircleAvatar(
                         radius: 20,
