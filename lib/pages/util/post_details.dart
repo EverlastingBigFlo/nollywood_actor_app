@@ -131,7 +131,7 @@ class _PostDetailsState extends State<PostDetails> {
           // side icons and numbers
 
           Padding(
-            padding: const EdgeInsets.only(right: 10),
+            padding: const EdgeInsets.only(right: 5),
             child: Container(
               alignment: Alignment.bottomRight,
               child: Column(
