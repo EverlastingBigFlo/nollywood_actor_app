@@ -88,12 +88,15 @@ class _OnboardingState extends State<Onboarding> {
                           children: mySecondActors.map((path) {
                             return Padding(
                               padding: const EdgeInsets.all(7),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                child: Image(
-                                  image: AssetImage(path),
-                                  fit: BoxFit.contain,
-                                  height: 135,
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(10),
+                                  child: Image(
+                                    image: AssetImage(path),
+                                    fit: BoxFit.contain,
+                                    height: 135,
+                                  ),
                                 ),
                               ),
                             );
