@@ -115,14 +115,29 @@ class _PostDetailsState extends State<PostDetails> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  CircleAvatar(
-                    radius: 50,
-                    child: MyButton(
-                      icon: Image.asset(
-                        widget.addFriend,
+                  Stack(
+                    children: [
+                      CircleAvatar(
+                        radius: 25,
+                        backgroundImage: AssetImage(widget.addFriend),
                       ),
-                      number: widget.numbersOfLikes,
-                    ),
+                      Positioned(
+                        bottom: 0,
+                        right: 0,
+                        child: Container(
+                          padding: const EdgeInsets.all(4),
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.red,
+                          ),
+                          child: const Icon(
+                            Icons.add,
+                            color: Colors.white,
+                            size: 20,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                   MyButton(
                     icon: Image.asset(
