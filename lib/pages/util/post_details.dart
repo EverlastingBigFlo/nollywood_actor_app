@@ -11,6 +11,7 @@ class PostDetails extends StatefulWidget {
   final String numbersOfComment;
   final String numbersOfShare;
   final userPost;
+  final home;
 
   const PostDetails({
     super.key,
@@ -21,6 +22,7 @@ class PostDetails extends StatefulWidget {
     required this.numbersOfComment,
     required this.numbersOfShare,
     this.userPost,
+    this.home,
   });
 
   @override
@@ -110,9 +112,8 @@ class _PostDetailsState extends State<PostDetails> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(
-              icon: Image.asset('lib/icons/inactive.png'), label: 'Home'),
-          // BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+          BottomNavigationBarItem(icon: Image.asset(widget.home), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
         ],
       ),
     );

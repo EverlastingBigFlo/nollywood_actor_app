@@ -20,6 +20,7 @@ class _MainScreenState extends State<MainScreen> {
       numbersOfLikes: '256',
       numbersOfComment: '25',
       numbersOfShare: '12',
+      home: 'lib/icons/inactive.png',
     );
   }
 }
