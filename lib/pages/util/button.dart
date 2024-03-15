@@ -15,14 +15,14 @@ class MyButton extends StatelessWidget {
       child: Column(
         children: [
           IconButton(
-            icon: icon is IconData ? Icon(icon as IconData) : icon as Widget,
+            icon: icon is IconData ? Icon(icon as IconData) : icon,
             onPressed: () {},
           ),
           Text(
             number,
             style: TextStyle(color: numberColor ?? Colors.white),
           ),
-          SizedBox(height: 25),
+          const SizedBox(height: 15),
         ],
       ),
     );
