@@ -123,11 +123,10 @@ class _PostDetailsState extends State<PostDetails> {
           BottomNavigationBarItem(icon: Image.asset(widget.home), label: ''),
           BottomNavigationBarItem(
               icon: Image.asset(widget.business), label: ''),
-          // BottomNavigationBarItem(icon: Icon(widget.add), label: ''),
 
           BottomNavigationBarItem(
             icon: Container(
-              color: const Color(0xFFEB545D), // Set the background color to red
+              color: const Color(0xFFEB545D),
               padding: const EdgeInsets.symmetric(vertical: 4.5, horizontal: 5),
               child: Icon(widget.add),
             ),
