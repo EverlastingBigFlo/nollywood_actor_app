@@ -9,6 +9,12 @@ class PostDetails extends StatefulWidget {
   final String numbersOfComment;
   final String numbersOfShare;
   final userPost;
+  final home;
+  final business;
+  final add;
+  final chat;
+  final profile;
+
   const PostDetails(
       {super.key,
       required this.username,
@@ -17,7 +23,7 @@ class PostDetails extends StatefulWidget {
       required this.numbersOfLikes,
       required this.numbersOfComment,
       required this.numbersOfShare,
-      this.userPost});
+      this.userPost, this.home, this.business, this.add, this.chat, this.profile});
 
   @override
   State<PostDetails> createState() => _PostDetailsState();
