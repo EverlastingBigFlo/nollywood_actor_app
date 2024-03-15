@@ -49,7 +49,9 @@ class _PostDetailsState extends State<PostDetails> {
                   Text(
                     '@${widget.username}',
                     style: const TextStyle(
-                        fontSize: 14.63, fontWeight: FontWeight.w500),
+                        color: Colors.white,
+                        fontSize: 14.63,
+                        fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(
                     height: 20,
@@ -57,7 +59,9 @@ class _PostDetailsState extends State<PostDetails> {
                   Text(
                     widget.songTitle,
                     style: const TextStyle(
-                        fontSize: 13.59, fontWeight: FontWeight.w300),
+                        color: Colors.white,
+                        fontSize: 13.59,
+                        fontWeight: FontWeight.w400),
                   ),
                   const SizedBox(
                     height: 5,
@@ -65,7 +69,9 @@ class _PostDetailsState extends State<PostDetails> {
                   Text(
                     widget.description,
                     style: const TextStyle(
-                        fontSize: 13.593, fontWeight: FontWeight.w400),
+                        color: Colors.white,
+                        fontSize: 13.593,
+                        fontWeight: FontWeight.w500),
                   ),
                 ],
               ),
