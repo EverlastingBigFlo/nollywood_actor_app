@@ -193,6 +193,11 @@ class _PostDetailsState extends State<PostDetails> {
               ),
             ),
           ),
+          Positioned(child: Container(
+            height: 10,
+            width: 20,
+
+          ))
         ],
       ),
       // bottom navigation
