@@ -55,122 +55,119 @@ class _PostDetailsState extends State<PostDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: Stack(
         children: [
-          Stack(
-            children: [
-              Container(
-                alignment: const Alignment(0, 0),
-                child: Image(
-                  image: AssetImage(widget.userPost),
-                  fit: BoxFit.cover,
-                  height: 500,
-                ),
-              ),
-              // username and description
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Container(
-                  alignment: const Alignment(-1, 1),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Text(
-                        '@${widget.username}',
-                        style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 14.63,
-                            fontWeight: FontWeight.w600),
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      Text(
-                        widget.songTitle,
-                        style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 13.59,
-                            fontWeight: FontWeight.w400),
-                      ),
-                      const SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        widget.description,
-                        style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 13.593,
-                            fontWeight: FontWeight.w500),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-
-              // side icons and numbers
-
-              Padding(
-                padding: const EdgeInsets.only(right: 10),
-                child: Container(
-                  alignment: Alignment.bottomRight,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Stack(
-                          clipBehavior: Clip.none,
-                          children: [
-                            CircleAvatar(
-                              radius: 20,
-                              backgroundImage: AssetImage(widget.addFriend),
-                            ),
-                            Positioned(
-                              bottom: -15,
-                              right: 0,
-                              left: 0,
-                              child: Container(
-                                padding: const EdgeInsets.all(2),
-                                decoration: const BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: Colors.red,
-                                ),
-                                child: const Icon(
-                                  Icons.add,
-                                  color: Colors.white,
-                                  size: 20,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      MyButton(
-                        icon: Image.asset(
-                          widget.likes,
-                        ),
-                        number: widget.numbersOfLikes,
-                      ),
-                      MyButton(
-                        icon: Image.asset(widget.comment),
-                        number: widget.numbersOfComment,
-                      ),
-                      MyButton(
-                        icon: Image.asset(
-                          widget.share,
-                          color: Colors.white,
-                          height: 35,
-                        ),
-                        number: widget.numbersOfShare,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ],
+          Container(
+            alignment: const Alignment(0, 0),
+            child: Image(
+              image: AssetImage(widget.userPost),
+              fit: BoxFit.cover,
+              height: 850,
+            ),
           ),
+          // username and description
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Container(
+              alignment: const Alignment(-1, 1),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text(
+                    '@${widget.username}',
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 14.63,
+                        fontWeight: FontWeight.w600),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    widget.songTitle,
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 13.59,
+                        fontWeight: FontWeight.w400),
+                  ),
+                  const SizedBox(
+                    height: 5,
+                  ),
+                  Text(
+                    widget.description,
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 13.593,
+                        fontWeight: FontWeight.w500),
+                  ),
+                ],
+              ),
+            ),
+          ),
+
+          // side icons and numbers
+
+          Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: Container(
+              alignment: Alignment.bottomRight,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Stack(
+                      clipBehavior: Clip.none,
+                      children: [
+                        CircleAvatar(
+                          radius: 20,
+                          backgroundImage: AssetImage(widget.addFriend),
+                        ),
+                        Positioned(
+                          bottom: -15,
+                          right: 0,
+                          left: 0,
+                          child: Container(
+                            padding: const EdgeInsets.all(2),
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.red,
+                            ),
+                            child: const Icon(
+                              Icons.add,
+                              color: Colors.white,
+                              size: 20,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  MyButton(
+                    icon: Image.asset(
+                      widget.likes,
+                    ),
+                    number: widget.numbersOfLikes,
+                  ),
+                  MyButton(
+                    icon: Image.asset(widget.comment),
+                    number: widget.numbersOfComment,
+                  ),
+                  MyButton(
+                    icon: Image.asset(
+                      widget.share,
+                      color: Colors.white,
+                      height: 35,
+                    ),
+                    number: widget.numbersOfShare,
+                  ),
+                ],
+              ),
+            ),
+          ),
+
           // progress bar section
           FractionallySizedBox(
             alignment: Alignment.bottomCenter,
