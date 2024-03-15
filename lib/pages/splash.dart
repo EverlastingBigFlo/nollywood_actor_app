@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 // import 'package:shared_preferences/shared_preferences.dart';
 
@@ -30,6 +31,7 @@ class _SplashState extends State<Splash> {
             ),
           ),
           // loader section
+          CupertinoActivityIndicator(),
           Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
