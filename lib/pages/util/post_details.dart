@@ -102,18 +102,18 @@ class _PostDetailsState extends State<PostDetails> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  MyButton(icon: Icons.favorite, number: widget.numbersOfLikes),
+                  // MyButton(icon: Icons.favorite, number: widget.numbersOfLikes),
                   MyButton(
                       // icon: Image.asset(widget.comment),
                       icon: Image.asset(widget.comment),
                       number:
                           // '25'
                           widget.numbersOfComment),
-                  MyButton(
-                      icon: Icons.share,
-                      number:
-                          // '12'
-                          widget.numbersOfShare),
+                  // MyButton(
+                  //     icon: Icons.share,
+                  //     number:
+                  //         // '12'
+                  //         widget.numbersOfShare),
                 ],
               ),
             ),
