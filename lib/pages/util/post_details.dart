@@ -123,7 +123,16 @@ class _PostDetailsState extends State<PostDetails> {
           BottomNavigationBarItem(icon: Image.asset(widget.home), label: ''),
           BottomNavigationBarItem(
               icon: Image.asset(widget.business), label: ''),
-          BottomNavigationBarItem(icon: Icon(widget.add), label: ''),
+          // BottomNavigationBarItem(icon: Icon(widget.add), label: ''),
+
+          BottomNavigationBarItem(
+            icon: Container(
+              color: Colors.red, // Set the background color to red
+              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              child: Icon(widget.add),
+            ),
+            label: '',
+          ),
           BottomNavigationBarItem(icon: Image.asset(widget.chat), label: ''),
           BottomNavigationBarItem(icon: Icon(widget.profile), label: ''),
         ],
