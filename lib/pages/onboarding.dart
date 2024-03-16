@@ -75,7 +75,7 @@ class _OnboardingState extends State<Onboarding> {
 
               Positioned(
                 top: 330,
-                right: -65,
+                right: -60,
                 child: Transform(
                   transform: Matrix4.skew(-3, 3),
                   child: Padding(
