@@ -47,7 +47,7 @@ class _OnboardingState extends State<Onboarding> {
               // Actors section
               Positioned(
                 top: 190,
-                right: -45,
+                right: -55,
                 child: Transform(
                   transform: Matrix4.skew(-3, 3),
                   child: Padding(
@@ -57,7 +57,7 @@ class _OnboardingState extends State<Onboarding> {
                         Row(
                           children: myFirstActors.map((path) {
                             return Padding(
-                              padding: const EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(12),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: Image(
@@ -75,7 +75,7 @@ class _OnboardingState extends State<Onboarding> {
 
               Positioned(
                 top: 330,
-                right: -55,
+                right: -65,
                 child: Transform(
                   transform: Matrix4.skew(-3, 3),
                   child: Padding(
@@ -85,7 +85,7 @@ class _OnboardingState extends State<Onboarding> {
                         Row(
                           children: mySecondActors.map((path) {
                             return Padding(
-                              padding: const EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(12),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: Image(
